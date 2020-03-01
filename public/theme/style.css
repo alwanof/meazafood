@@ -1,0 +1,69 @@
+html{
+    scroll-behavior: smooth;
+}
+.navigation-bar li{
+    margin: 0 6px;
+}
+.navigation-bar li a{
+    color: #a34222;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+.bg-main{
+    background-color: #a34222 !important;
+    color: white !important;
+}
+.btn-main{
+    background-color: #a34222 !important;
+    color: white !important;
+}
+.navigation-bar li a:hover{
+    color: #751915;
+}
+.about-us h2{
+    text-transform: uppercase;
+    color: #a34222;
+}
+.aboutus-description{
+    line-height: 40px;
+}
+.aboutus-content-tabs{
+    padding: 25px 0px;
+}
+
+.aboutus-content-tabs h2{
+    text-transform: none;
+}
+.products h2{
+    color: #751915;
+}
+.products h3{
+    text-transform: uppercase;
+    color: #a34222;
+}
+.product{
+    border: 0 !important;
+}
+.contact-info h2{
+    color: #751915;
+}
+.contact-info h3{
+    text-transform: uppercase;
+    color: #a34222;
+}
+.contact-content h3{
+    color: #751915;
+}
+.contact-content i{
+    color: #a34222;
+}
+.map iframe{
+    width: 100%;
+    height: 500px;
+}
+.navbar-toggler i{
+    color: #751915;
+    font-size: 25px;
+}
