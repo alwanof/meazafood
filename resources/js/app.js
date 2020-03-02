@@ -33,7 +33,7 @@ Vue.component('order-edit-approved-component',require('./components/EditApproved
 Vue.component('order-edit-completed-component',require('./components/EditCompletedOrderComponent.vue').default);
 
 const CONFIG = {
-    API_URL: 'https://'+window.location.hostname+'/public/api/',
+    API_URL: 'http://'+window.location.hostname+'/public/api/',
     PATH: '/public',
     //API_URL: 'http://'+window.location.hostname+'/meazafood/public/api/',
     //PATH: '/meazafood/public',
