@@ -37,7 +37,7 @@ class BillController extends Controller
         try {
             Bill::create([
                 'title' => $request->title,
-                'amount' => $request->amount,
+                'amount' => -1*$request->amount,
                 'order_id' => $request->order_id,
                 'user_id' => $request->user_id,
             ]);

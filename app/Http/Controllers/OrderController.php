@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Bill;
 use App\Events\AdminApprovedOrder;
 use App\Events\AdminCompletedOrder;
 use App\Events\AdminUpdateOrder;
@@ -12,6 +13,7 @@ use App\User;
 use Illuminate\Http\Request;
 use Exception;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Gate;
 
 class OrderController extends Controller
@@ -428,31 +430,8 @@ class OrderController extends Controller
 
     public function show_before_export($id)
     {
-       /* try{
+        return  99;
 
-            $order = Order::findOrFail($id);
-            $OID=substr(md5($id),0,5).'-'.$id;
-            $pdf = PDF::loadView('orders.order_invoice',compact(['order','OID']));
-            $user=User::find(2);
-            $user->notify(new SendPerforma($pdf,$OID));
-            return 99;
-
-        }catch (Exception $e){
-
-            abort(403);
-
-        }*/
-
-
-        $user=User::find(2);
-        $order = Order::findOrFail($id);
-        /*$OID=substr(md5($id),0,5).'-'.$id;
-        $pdf = PDF::loadView('orders.order_invoice',compact(['order','OID']));
-        $user->notify(new YourOrderTrackingNo($pdf,$order));*/
-
-        event(new AdminUpdateOrder($order));
-
-        return 99;
     }
 
 }

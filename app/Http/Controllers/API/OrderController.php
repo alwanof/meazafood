@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\API;
 
+use App\Bill;
 use App\Http\Controllers\Controller;
 use App\Item;
 use App\Order;
@@ -52,6 +53,7 @@ class OrderController extends Controller
 
         $product = Order::find($id);
         $product->delete();
+        Bill::where('order_id',$id)->delete();
         return response()->json(1, 200);
     }
 

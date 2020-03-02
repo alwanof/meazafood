@@ -66,9 +66,9 @@
                                             {{$item->price * $item->amount}}.00
                                         @elseif($item->discount > 0)
                                             @if(strpos($item->discount,'%'))
-                                                {{($item->price * (100 - rtrim($item->discount,'%'))) / 100}}
+                                                {{($item->price * (100 - rtrim($item->discount,'%')))*$item->amount / 100}}
                                             @else
-                                                {{($item->price - $item->discount) * $item->amount}}.00$
+                                                {{($item->price * $item->amount)-$item->discount}}.00$
                                             @endif
                                         @else
                                             {{$item->price * $item->amount}}.00

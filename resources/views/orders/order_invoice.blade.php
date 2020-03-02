@@ -84,21 +84,17 @@
                     {{$item->price * $item->amount}}.00$
                 @elseif($item->discount > 0)
                     @if(strpos($item->discount,'%'))
-                        {{($item->price * (100 - rtrim($item->discount,'%'))) / 100}}.00$
+                        {{($item->price * (100 - rtrim($item->discount,'%')))*$item->amount / 100}}
                     @else
-                        {{($item->price - $item->discount) * $item->amount}}.00$
+                        {{($item->price * $item->amount)-$item->discount}}.00$
                     @endif
+
                 @else
                     {{$item->price * $item->amount}}.00$
                 @endif
             </td>
         </tr>
-        <tr align="center" >
-            <td colspan="4" align="right">Sub Total :</td>
-            <td style="background-color: #d5d5d5">
-                {{$order->total}}.00$
-            </td>
-        </tr>
+
         <tr align="center">
             <td colspan="4" align="right">Discount :</td>
             <td style="background-color: #d5d5d5">

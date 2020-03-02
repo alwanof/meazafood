@@ -6,6 +6,7 @@ use App\Bill;
 use App\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -34,6 +35,21 @@ class HomeController extends Controller
             ->groupBy('month')
             ->get();
 
+        $bestAgentsList=DB::table('bills')
+            ->join('users', 'users.id', '=', 'bills.user_id')
+            ->select('users.name', DB::raw('SUM(bills.amount) AS total'))
+            ->where('bills.amount', '>',0)
+            ->groupBy('users.name')
+            ->orderBy('total','desc')
+            ->take(10)->get();
+        $maxBestAgents=DB::table('bills')
+            ->join('users', 'users.id', '=', 'bills.user_id')
+            ->select('users.name', DB::raw('SUM(bills.amount) AS total'))
+            ->where('bills.amount', '>',0)
+            ->groupBy('users.name')
+            ->orderBy('total','desc')
+            ->get()->max('total');
+
         $months=$bills->pluck('month');
         $billsValue=$bills->pluck('total');
         $dueValue=$due->pluck('total');
@@ -57,7 +73,7 @@ class HomeController extends Controller
         //return $data;
 
         auth()->user()->unreadNotifications->markAsRead();
-        return view('home',compact(['data','months','billsValue','dueValue']));
+        return view('home',compact(['data','months','billsValue','dueValue','bestAgentsList','maxBestAgents']));
     }
 
     public function lang($locale)

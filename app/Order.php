@@ -44,7 +44,7 @@ class Order extends Model
         $discount=($this->discount)?$this->discount:0;
         foreach ($items as $item){
             if(substr($item->discount, -1)=='%'){
-                $itemDiscount=rtrim($discount,'%');
+                $itemDiscount=rtrim($item->discount,'%');
                 $total=$total+($item->amount*$item->price*((100-$itemDiscount)/100));
             }else{
                 $total=$total+($item->amount*$item->price)-$item->discount;
