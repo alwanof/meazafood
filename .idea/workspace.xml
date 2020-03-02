@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b829440a-b06a-4fa9-add7-ccc841179ff0" name="Default Changelist" comment="" />
+    <list default="true" id="b829440a-b06a-4fa9-add7-ccc841179ff0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/meazafood.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meazafood.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Listeners/AdminApprovedOrderHook.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Listeners/AdminApprovedOrderHook.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/orders/order_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/orders/order_details.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,6 +142,12 @@
       <recent name="C:\xampp\htdocs\meazafood\resources\js\components" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -140,6 +160,9 @@
       <updated>1582833599008</updated>
       <workItem from="1582833609673" duration="3754000" />
       <workItem from="1582879082188" duration="50372000" />
+      <workItem from="1583137693288" duration="869000" />
+      <workItem from="1583140731361" duration="103000" />
+      <workItem from="1583145873642" duration="1532000" />
     </task>
     <servers />
   </component>
@@ -171,10 +194,10 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1865" height="256" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1080@1366.0.1920.1080" timestamp="1582878756709" />
-    <state x="1931" y="322" key="com.intellij.ide.util.TipDialog" timestamp="1582879085235">
+    <state x="1931" y="322" key="com.intellij.ide.util.TipDialog" timestamp="1583145872781">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state x="1931" y="322" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1920.1080@1366.0.1920.1080" timestamp="1582879085235" />
+    <state x="1931" y="322" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1920.1080@1366.0.1920.1080" timestamp="1583145872781" />
     <state x="1905" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1582885812852">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>

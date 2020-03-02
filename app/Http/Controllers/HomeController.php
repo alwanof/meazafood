@@ -28,12 +28,10 @@ class HomeController extends Controller
     {
         $due=  Bill::selectRaw('MONTHNAME(created_at) month , SUM(amount) total')
             ->groupBy('month')
-            ->orderBy('created_at')
             ->get();
         $bills=  Bill::selectRaw('MONTHNAME(created_at) month , SUM(amount) total')
             ->where('amount','>',0)
             ->groupBy('month')
-            ->orderBy('created_at')
             ->get();
 
         $months=$bills->pluck('month');

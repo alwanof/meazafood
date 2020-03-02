@@ -32,32 +32,33 @@ class Order extends Model
     {
         $items=$this->items;
         $total=0;
-
         foreach ($items as $item){
-            $discount=($item->discount)?$item->discount:0;
-            if(substr($item->discount, -1)=='%'){
-                $discount=rtrim($discount,'%');
-                $subtotal=$item->amount*$item->price*((100-$discount)/100);
-            }else{
-                $subtotal=($item->amount*$item->price)-$discount;
-            }
-            $total=$total+$subtotal;
-
+            $total=$total+$item->amount*$item->price;
         }
         return $total;
     }
     public function getSummaryAttribute()
     {
-        $sum=0;
+        $total=0;
+        $items=$this->items;
         $discount=($this->discount)?$this->discount:0;
-        if(substr($discount, -1)=='%'){
-            $discount=rtrim($discount,'%');
-            $sum=$this->total*((100-$discount)/100);
-        }else{
-            $sum=$this->total-$discount;
+        foreach ($items as $item){
+            if(substr($item->discount, -1)=='%'){
+                $itemDiscount=rtrim($discount,'%');
+                $total=$total+($item->amount*$item->price*((100-$itemDiscount)/100));
+            }else{
+                $total=$total+($item->amount*$item->price)-$item->discount;
+            }
         }
 
-        return $sum;
+        if(substr($discount, -1)=='%'){
+            $discount=rtrim($discount,'%');
+            $total=$total*((100-$discount)/100);
+        }else{
+            $total=$total-$discount;
+        }
+
+        return $total;
     }
 
     public function getCreatedAtAttribute()

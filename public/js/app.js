@@ -45645,7 +45645,7 @@ Vue.component('order-edit-pending-component', __webpack_require__(/*! ./componen
 Vue.component('order-edit-approved-component', __webpack_require__(/*! ./components/EditApprovedOrderComponent.vue */ "./resources/js/components/EditApprovedOrderComponent.vue")["default"]);
 Vue.component('order-edit-completed-component', __webpack_require__(/*! ./components/EditCompletedOrderComponent.vue */ "./resources/js/components/EditCompletedOrderComponent.vue")["default"]);
 var CONFIG = {
-  API_URL: 'http://' + window.location.hostname + '/public/api/',
+  API_URL: 'https://' + window.location.hostname + '/public/api/',
   PATH: '/public',
   //API_URL: 'http://'+window.location.hostname+'/meazafood/public/api/',
   //PATH: '/meazafood/public',

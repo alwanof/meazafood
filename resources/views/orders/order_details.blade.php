@@ -98,7 +98,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Order Status : </h5>
                         <p class="card-text">
-                            <h3><span class="bg-warning p-1">{{$order->status_note}}</span></h3>
+                            <h3><span class="bg-warning p-1"><a href="{{(substr($order->status_note, 4)=='http')?$order->status_note:'#'}}">{{$order->status_note}}</a></span></h3>
                         </p>
                     </div>
                 </div>
