@@ -21,6 +21,7 @@ class AdminApprovedOrderHook
         $bill->amount=$order->summary;
         $bill->title=$order->title;
         $bill->user_id=$order->user_id;
+        $bill->order_id=$order->id;
         $bill->save();
 
         $OID=substr(md5($order->id),0,5).'-'.$order->id;
