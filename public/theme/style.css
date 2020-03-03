@@ -5,8 +5,8 @@ html{
     margin: 0 6px;
 }
 .navigation-bar li a{
-    color: #a34222;
-    font-size: 20px;
+    color: #000;
+    font-size: 18px;
     text-transform: uppercase;
     transition: 1s;
 }
@@ -24,7 +24,9 @@ html{
 }
 .about-us h2{
     text-transform: uppercase;
-    color: #a34222;
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
 }
 .aboutus-description{
     line-height: 40px;
@@ -41,7 +43,9 @@ html{
 }
 .products h3{
     text-transform: uppercase;
-    color: #a34222;
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
 }
 .product{
     border: 0 !important;
@@ -51,10 +55,14 @@ html{
 }
 .contact-info h3{
     text-transform: uppercase;
-    color: #a34222;
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
 }
 .contact-content h3{
-    color: #751915;
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
 }
 .contact-content i{
     color: #a34222;

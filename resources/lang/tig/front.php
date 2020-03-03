@@ -12,7 +12,7 @@ return [
         'አማርኛ',
         'ትግርኛ',
         'swdish',
-        'Deutschland'
+        'Deutsch'
     ],
     'title'=>'Meaza Food',
     'default_page_name'=>'ቀዳማይ ገጽ',
@@ -20,8 +20,8 @@ return [
         'menu_01'=>'ቀዳማይ ገጽ', // wanted to translate
         'menu_02'=>'ብዛዕባና',
         'menu_03'=>'ፍርያትና',
-        'menu_04'=>'ክትረኽቡና ምስእትደልዩ',
-        'menu_05'=>'ወኪላት'
+        'menu_04'=>'ክትረኽቡና ርኸቡና',
+        'menu_05'=>'ቋንቋ'
     ],
     'slider'=>[
         'slider_01'=>[
@@ -72,7 +72,7 @@ return [
         ',
     ],
     'products'=>[
-        'section_title'=>'ፍርያትና፦',
+        'section_title'=>'ፍርያትና',
         'product_01'=>[
             'title'=>'Berbere Tomato Sause',
             'description'=>'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
@@ -88,7 +88,7 @@ return [
     ],
     'contact'=>[
         'specific_keyword'=>'ርኸብ', // wanted to translate
-        'title'=>'ክትረኽቡና ምስእትደልዩ፦',
+        'title'=>'ክትረኽቡና',
         'address'=>[
             'title'=>'ኣድራሻና', // wanted to translate
             'content'=>'Divan Residence at Bomonti Plaza Cumhuriyet, Harika Sk. No: 4, 34380 Şişli/İstanbul',

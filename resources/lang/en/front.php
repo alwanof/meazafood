@@ -11,8 +11,8 @@ return [
         'english',
         'አማርኛ',
         'ትግርኛ',
-        'swdish',
-        'Deutschland'
+        'svenska',
+        'Deutsch'
     ],
     'title'=>'Meaza Food',
     'default_page_name'=>'Home',
@@ -21,7 +21,7 @@ return [
         'menu_02'=>'about',
         'menu_03'=>'products',
         'menu_04'=>'contact',
-        'menu_05'=>'agents'
+        'menu_05'=>'agent'
     ],
     'slider'=>[
         'slider_01'=>[

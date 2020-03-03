@@ -11,8 +11,8 @@ return [
         'english',
         'አማርኛ',
         'ትግርኛ',
-        'swdish',
-        'Deutschland'
+        'svenska',
+        'Deutsch'
     ],
     'title'=>'Meaza Food',
     'default_page_name'=>'الرئيسية',
