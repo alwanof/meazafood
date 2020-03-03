@@ -32,7 +32,7 @@ class YourOrderTrackingNo extends Notification
      */
     public function via($notifiable)
     {
-        return ['mail'];
+        return ['mail','database'];
     }
 
     /**
@@ -61,8 +61,12 @@ class YourOrderTrackingNo extends Notification
      */
     public function toArray($notifiable)
     {
+        $OID=substr(md5($this->order->id),0,5).'-'.$this->order->id;
         return [
-            //
+            'data'=>'Your order with reference number: '.$OID.' is on the way for delivery',
+            'user'=>auth()->user(),
+            'link'=>url('/admin/order/details/'.$this->order->id)
+
         ];
     }
 }

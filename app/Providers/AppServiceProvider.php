@@ -31,9 +31,9 @@ class AppServiceProvider extends ServiceProvider
         view()->composer('widgets.notifications',function($view){
 
             $data=[
-                'allNoti'=>auth()->user()->notifications,
-                'newNoti'=>auth()->user()->unreadNotifications,
-                'oldNoti'=>auth()->user()->readNotifications,
+                'allNoti'=>auth()->user()->notifications()->limit(10)->get(),
+                'newNoti'=>auth()->user()->unreadNotifications()->limit(10)->get(),
+                'oldNoti'=>auth()->user()->readNotifications()->limit(10)->get(),
                 'trans'=>Bill::where('user_id',auth()->user()->id)->latest()->get(),
                 'balance'=>auth()->user()->balance()
             ];

@@ -32,7 +32,7 @@ class YourOrderUpdated extends Notification
      */
     public function via($notifiable)
     {
-        return ['mail'];
+        return ['mail','database'];
     }
 
     /**
@@ -61,8 +61,12 @@ class YourOrderUpdated extends Notification
      */
     public function toArray($notifiable)
     {
+        $OID=substr(md5($this->order->id),0,5).'-'.$this->order->id;
         return [
-            //
+            'data'=>'Your order('.$OID.') has been updated!.',
+            'user'=>auth()->user(),
+            'link'=>url('/admin/order/details/'.$this->order->id)
+
         ];
     }
 }

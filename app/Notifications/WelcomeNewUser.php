@@ -45,7 +45,7 @@ class WelcomeNewUser extends Notification
         return (new MailMessage)
             ->subject('Welcome to Marasiel')
             ->line('Hi '.$notifiable->name)
-            ->line('Welcome to Marasiel. We’re thrilled to see you here! ')
+            ->line('Welcome to Meaza. We’re thrilled to see you here! ')
             ->line('You can access your dashboard using the following credential: ')
             ->line('Username:'.$notifiable->email)
             ->line('password: {password you set}')
