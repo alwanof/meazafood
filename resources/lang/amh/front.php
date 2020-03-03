@@ -6,13 +6,13 @@ return [
         'title'=>'Meaza Food',
     ],
     'languages'=>[
-        'title'=>'ቋንቋዎች',
+        'title'=>'ቋንቋ',
         'عربي',
         'english',
         'አማርኛ',
         'ትግርኛ',
-        'swdish',
-        'Deutschland'
+        'svenska',
+        'Deutsch'
     ],
     'title'=>'Meaza Food',
     'default_page_name'=>'መነሻ ገጽ',
@@ -21,7 +21,7 @@ return [
         'menu_02'=>'ስለ እኛ',
         'menu_03'=>'ምርቶች',
         'menu_04'=>'አግኙን',
-        'menu_05'=>'ወኪሎች'
+        'menu_05'=>'ወኪል '
     ],
     'slider'=>[
         'slider_01'=>[

@@ -6,22 +6,22 @@ return [
         'title'=>'Meaza Food',
     ],
     'languages'=>[
-        'title'=>'Sprachen',
+        'title'=>'sprache',
         'عربي',
         'english',
         'አማርኛ',
         'ትግርኛ',
-        'swdish',
-        'Deutschland'
+        'svenska',
+        'Deutsch'
     ],
     'title'=>'Meaza Food',
     'default_page_name'=>'Zuhause',
     'menu'=>[
         'menu_01'=>'Zuhause',
-        'menu_02'=>'Über',
+        'menu_02'=>'Über uns',
         'menu_03'=>'Produkte',
         'menu_04'=>'Kontakt',
-        'menu_05'=>'Agentinnen'
+        'menu_05'=>'Vertreter'
     ],
     'slider'=>[
         'slider_01'=>[

@@ -57,29 +57,25 @@
             <ul class="navbar-nav ml-auto navigation-bar">
                 <li class="nav-item active">
                     <a class="nav-link" href="{{route('route_start')}}" title="{{__('front.general.title')}}">
-                        <i class="fas fa-home"></i>
                         {{__('front.menu.menu_01')}}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('route_start')}}#about-us" title="{{__('front.general.title')}}">
-                        <i class="fas fa-question-circle"></i>
                         {{__('front.menu.menu_02')}}
                     </a>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="{{route('route_start')}}#products" title="{{__('front.general.title')}}">
-                        <i class="fab fa-product-hunt"></i>
                         {{__('front.menu.menu_03')}}
                     </a>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="{{route('route_start')}}#contact" title="{{__('front.general.title')}}">
-                        <i class="fas fa-id-card-alt"></i>
                         {{__('front.menu.menu_04')}}
                     </a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-language"></i> {{__('front.languages.title')}}
+                        {{__('front.languages.title')}}
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="nav-link {{session('locale') == 'ar' ? 'text-right':'text-left'}}" href="{{route('switcher','ar')}}">
@@ -209,7 +205,7 @@
         </div>
     </div>
 </div>
-
+<br><br>
 <div class="container products" id="products">
     <div class="row">
         <div class="col-lg-12 mb-5">
@@ -254,7 +250,7 @@
 <div class="container-fluid " id="contact">
     <div class="row">
         <div class="col-lg-12 mt-5 contact-info">
-            <h3 align="center">
+            <h3 align="center" class="mt-5">
                 {{__('front.contact.title')}}
             </h3>
         </div>
@@ -265,12 +261,11 @@
                 {{__('front.contact.address.title')}}
             </h3>
             <address>
-                <p class="{{session('locale') == 'ar' ? 'text-right':'text-left'}}">
+                <p class="{{session('locale') == 'ar' ? 'text-right':'text-left'}} mt-3">
                     <i class="fas fa-location-arrow"></i>
 
                     {{__('front.contact.address.content')}}
                 </p>
-                <br>
                 <p class="{{session('locale') == 'ar' ? 'text-right':'text-left'}}">
                     <i class="fas fa-phone-alt"></i>
                     {{__('front.contact.tel')}}
