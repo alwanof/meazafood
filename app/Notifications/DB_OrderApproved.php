@@ -7,7 +7,7 @@ use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 
-class NewOrderFromAgent extends Notification
+class DB_OrderApproved extends Notification
 {
     use Queueable;
 
@@ -16,10 +16,9 @@ class NewOrderFromAgent extends Notification
      *
      * @return void
      */
-    private $order;
-    public function __construct($order)
+    public function __construct()
     {
-        $this->order=$order;
+        //
     }
 
     /**
@@ -30,7 +29,7 @@ class NewOrderFromAgent extends Notification
      */
     public function via($notifiable)
     {
-        return ['mail','database'];
+        return ['database'];
     }
 
     /**
@@ -41,13 +40,10 @@ class NewOrderFromAgent extends Notification
      */
     public function toMail($notifiable)
     {
-        $OID=substr(md5($this->order->id),0,5).'-'.$this->order->id;
         return (new MailMessage)
-            ->subject('New Order from: '.$this->order->user->name)
-            ->greeting('Dear, '.$notifiable->name)
-            ->line('New order from: '.$this->order->user->name.' has been set')
-            ->line('Review order details using following link:')
-            ->action('Order Details', url('/admin/order/details/'.$this->order->id));
+                    ->line('The introduction to the notification.')
+                    ->action('Notification Action', url('/'))
+                    ->line('Thank you for using our application!');
     }
 
     /**
@@ -58,12 +54,8 @@ class NewOrderFromAgent extends Notification
      */
     public function toArray($notifiable)
     {
-
         return [
-            'data'=>'New order from '.$this->order->user->name,
-            'user'=>$this->order->user,
-            'link'=>url('/admin/order/details/'.$this->order->id)
-
+            //
         ];
     }
 }
