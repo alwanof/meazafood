@@ -6,7 +6,7 @@ return [
         'title'=>'Meaza Food',
     ],
     'languages'=>[
-        'title'=>'ቋንቋታት', // wanted to translate
+        'title'=>'ቋንቋ', // wanted to translate
         'عربي',
         'english',
         'አማርኛ',
@@ -20,8 +20,8 @@ return [
         'menu_01'=>'ቀዳማይ ገጽ', // wanted to translate
         'menu_02'=>'ብዛዕባና',
         'menu_03'=>'ፍርያትና',
-        'menu_04'=>'ክትረኽቡና ርኸቡና',
-        'menu_05'=>'ቋንቋ'
+        'menu_04'=>'ርኸቡና',
+        'menu_05'=>'ወኪል'
     ],
     'slider'=>[
         'slider_01'=>[
