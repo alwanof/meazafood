@@ -15,7 +15,7 @@
 
 @section('content')
     <!-- Default box -->
-    @can('access_orders_statistic')
+
         <div class="row">
             <div class="col-lg-3">
                 <div class="small-box bg-gradient-gray">
@@ -37,7 +37,7 @@
             <div class="col-lg-3">
                 <div class="small-box bg-warning">
                     <div class="inner">
-                        <h3 class="text-center">Last 3.Month</h3>
+                        <h3 class="text-center">Last 3.Months</h3>
                         <hr>
                         <h4>{{coolNumber($billStatistics['income']['t3month'])}}<sup>$In.</sup></h4>
 
@@ -85,8 +85,8 @@
                 </div>
             </div>
         </div>
-    @endcan
-    <hr>
+
+
     <bill-component :acl="{{json_encode($acl)}}" :orders="{{json_encode($orders)}}" :users="{{json_encode($users)}}" :lang={{ json_encode(app()->getLocale()) }} :auth="{{ json_encode(Auth::user()) }}" ></bill-component>
 
 @endsection
