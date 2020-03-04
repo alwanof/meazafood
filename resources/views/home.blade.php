@@ -90,7 +90,7 @@
                       @foreach($bestAgentsList as $agent)
                       <div class="progress-group" >
                            {{$agent->name}}
-                          <span class="float-right"><b>{{$agent->total}}<small><sup>$</sup></small></b></span>
+                          <span class="float-right"><b>{{coolNumber($agent->total)}}<small><sup>$</sup></small></b></span>
                           <div class="progress progress-sm mb-3">
                               <div class="'progress-bar bg-{{getColor(round(($agent->total*100/$maxBestAgents),0))}}" style="width: {{round(($agent->total*100/$maxBestAgents),0)}}%"></div>
                           </div>

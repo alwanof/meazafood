@@ -21,6 +21,48 @@ class BillController extends Controller
      */
     public function index()
     {
+        $month = date('m');
+        $year = date('Y');
+
+
+        $bill=new Bill;
+        if(!auth()->user()->can('isAdmin')){
+            $billStatistics=[
+                'income'=>[
+                    'all'=>$bill->where('user_id',auth()->user()->id)->where('amount','>',0)->get()->sum('amount'),
+                    'year'=>$bill->where('user_id',auth()->user()->id)->where('amount','>',0)->whereYear('created_at','=',$year)->get()->sum('amount'),
+                    't3month'=>$bill->where('user_id',auth()->user()->id)->where('amount','>',0)->whereMonth('created_at','<=',$month)->whereMonth('created_at','>',$month-3)->get()->sum('amount'),
+                    'month'=>$bill->where('user_id',auth()->user()->id)->where('amount','>',0)->whereMonth('created_at','<',$month)->get()->sum('amount')
+                ],
+                'due'=>[
+                    'all'=>$bill->where('user_id',auth()->user()->id)->where('amount','<',0)->get()->sum('amount'),
+                    'year'=>$bill->where('user_id',auth()->user()->id)->where('amount','<',0)->whereYear('created_at','=',$year)->get()->sum('amount'),
+                    't3month'=>$bill->where('user_id',auth()->user()->id)->where('amount','<',0)->whereMonth('created_at','<=',$month)->whereMonth('created_at','>',$month-3)->get()->sum('amount'),
+                    'month'=>$bill->where('user_id',auth()->user()->id)->where('amount','<',0)->whereMonth('created_at','<',$month)->get()->sum('amount')
+                ],
+            ];
+
+        }else{
+            $billStatistics=[
+                'income'=>[
+                    'all'=>$bill->where('amount','>',0)->get()->sum('amount'),
+                    'year'=>$bill->where('amount','>',0)->whereYear('created_at','=',$year)->get()->sum('amount'),
+                    't3month'=>$bill->where('amount','>',0)->whereMonth('created_at','<=',$month)->whereMonth('created_at','>',$month-3)->get()->sum('amount'),
+                    'month'=>$bill->where('amount','>',0)->whereMonth('created_at','<',$month)->get()->sum('amount')
+                ],
+                'due'=>[
+                    'all'=>$bill->where('amount','<',0)->get()->sum('amount'),
+                    'year'=>$bill->where('amount','<',0)->whereYear('created_at','=',$year)->get()->sum('amount'),
+                    't3month'=>$bill->where('amount','<',0)->whereMonth('created_at','<=',$month)->whereMonth('created_at','>',$month-3)->get()->sum('amount'),
+                    'month'=>$bill->where('amount','<',0)->whereMonth('created_at','<',$month)->get()->sum('amount')
+                ],
+            ];
+
+
+        }
+
+
+
 
 
 
@@ -30,7 +72,7 @@ class BillController extends Controller
         ];
         $orders=Order::latest()->get();
         $users=User::latest()->get();
-        return view('bills.index',compact(['acl','orders','users']));
+        return view('bills.index',compact(['acl','orders','users','billStatistics']));
     }
 
     /**

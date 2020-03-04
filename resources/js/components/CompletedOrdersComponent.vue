@@ -46,7 +46,7 @@
                             <td>
                                 <a :href="path+'/admin/order/details/'+order.id">{{ order.title }}</a>
                             </td>
-                            <td><a :title="order.desc.substr(0,25)">{{order.desc}}</a></td>
+                            <td><a :title="order.desc">{{order.desc.substr(0,25)}}</a></td>
                             <td>
                                 <b>$({{order.summary}}.00)</b><sup v-show="order.summary<order.total"><del>{{order.total}}.00</del></sup>
                             </td>

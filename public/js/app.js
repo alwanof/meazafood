@@ -25119,11 +25119,9 @@ var render = function() {
                       ]),
                       _vm._v(" "),
                       _c("td", [
-                        _c(
-                          "a",
-                          { attrs: { title: order.desc.substr(0, 25) } },
-                          [_vm._v(_vm._s(order.desc))]
-                        )
+                        _c("a", { attrs: { title: order.desc } }, [
+                          _vm._v(_vm._s(order.desc.substr(0, 25)))
+                        ])
                       ]),
                       _vm._v(" "),
                       _c("td", [
@@ -25994,11 +25992,9 @@ var render = function() {
                       ]),
                       _vm._v(" "),
                       _c("td", [
-                        _c(
-                          "a",
-                          { attrs: { title: order.desc.substr(0, 25) } },
-                          [_vm._v(_vm._s(order.desc))]
-                        )
+                        _c("a", { attrs: { title: order.desc } }, [
+                          _vm._v(_vm._s(order.desc.substr(0, 25)))
+                        ])
                       ]),
                       _vm._v(" "),
                       _c("td", [
@@ -30593,8 +30589,8 @@ var render = function() {
                     ]),
                     _vm._v(" "),
                     _c("td", [
-                      _c("a", { attrs: { title: order.desc.substr(0, 25) } }, [
-                        _vm._v(_vm._s(order.desc))
+                      _c("a", { attrs: { title: order.desc } }, [
+                        _vm._v(_vm._s(order.desc.substr(0, 25)))
                       ])
                     ]),
                     _vm._v(" "),
@@ -30835,11 +30831,9 @@ var render = function() {
                       ]),
                       _vm._v(" "),
                       _c("td", [
-                        _c(
-                          "a",
-                          { attrs: { title: order.desc.substr(0, 25) } },
-                          [_vm._v(_vm._s(order.desc))]
-                        )
+                        _c("a", { attrs: { title: order.desc } }, [
+                          _vm._v(_vm._s(order.desc.substr(0, 25)))
+                        ])
                       ]),
                       _vm._v(" "),
                       _c("td", [
@@ -45644,12 +45638,28 @@ Vue.component('order-edit-component', __webpack_require__(/*! ./components/EditO
 Vue.component('order-edit-pending-component', __webpack_require__(/*! ./components/EditPendingOrderComponent.vue */ "./resources/js/components/EditPendingOrderComponent.vue")["default"]);
 Vue.component('order-edit-approved-component', __webpack_require__(/*! ./components/EditApprovedOrderComponent.vue */ "./resources/js/components/EditApprovedOrderComponent.vue")["default"]);
 Vue.component('order-edit-completed-component', __webpack_require__(/*! ./components/EditCompletedOrderComponent.vue */ "./resources/js/components/EditCompletedOrderComponent.vue")["default"]);
+
+function coolNumber(num) {
+  if (num < 1000) {
+    return $num;
+  }
+
+  if (num < 1000000) {
+    return num / 1000 + 'K';
+  }
+
+  if ($num >= 1000000) {
+    return num / 1000000 + 'M';
+  }
+}
+
 var CONFIG = {
   API_URL: 'https://' + window.location.hostname + '/public/api/',
   PATH: '/public',
   //API_URL: 'http://'+window.location.hostname+'/meazafood/public/api/',
   //PATH: '/meazafood/public',
-  LANG: _lang_vue_translations_json__WEBPACK_IMPORTED_MODULE_0__
+  LANG: _lang_vue_translations_json__WEBPACK_IMPORTED_MODULE_0__,
+  coolNumber: coolNumber
 };
 /* harmony default export */ __webpack_exports__["default"] = (CONFIG);
 var app = new Vue({
