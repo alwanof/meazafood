@@ -113,7 +113,7 @@
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="{{asset('theme/img/slider/1.jpeg')}}" class="d-block w-100 img-fluid" alt="{{__('front.general.alt')}}" title="{{__('front.general.title')}}">
+            <img src="{{asset('theme/img/slider/01.jpg')}}" class="d-block w-100 img-fluid" alt="{{__('front.general.alt')}}" title="{{__('front.general.title')}}">
         </div>
         <div class="carousel-item">
             <img src="{{asset('theme/img/slider/2.jpeg')}}" class="d-block w-100 img-fluid" alt="{{__('front.general.alt')}}" title="{{__('front.general.title')}}">
@@ -247,7 +247,7 @@
     </div>
 </div>
 
-<div class="container-fluid " id="contact">
+<div class="container-fluid" id="contact">
     <div class="row">
         <div class="col-lg-12 mt-5 contact-info">
             <h3 align="center" class="mt-5">
@@ -255,8 +255,8 @@
             </h3>
         </div>
     </div>
-    <div class="row">
-        <div class="col-lg-12 mt-5 pl-5 pt-5 bg-light contact-content">
+    <div class="row ">
+        <div class="col-lg-6 mt-5 pl-5 pt-5 bg-light contact-content">
             <h3 class="{{session('locale') == 'ar' ? 'ar':'en'}}">
                 {{__('front.contact.address.title')}}
             </h3>
@@ -279,17 +279,61 @@
                     {{__('front.contact.work_time')}}
                 </p>
             </address>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.5871701165706!2d28.976994415415625!3d41.05615617929601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab72217aa2eab%3A0xc7f1195e790f4fe6!2sDivan%20Residence%20at%20Bomonti%20Plaza!5e0!3m2!1sen!2sus!4v1580846677295!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mt-5 pl-5 pt-5 bg-light contact-content">
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
+            @if(session('success'))
+                <div class="alert alert-success">
+                    <h3 style="color:green;">{{session('success')}}</h3>
+                </div>
+            @endif
+            <form action="{{route('send_email')}}" method="post" class="mb-5">
+                {{csrf_field()}}
+                <div class="form-group">
+                    <label for="name">{{__('front.contact.form.name')}}</label>
+                    <input type="text" name="full_name" class="form-control" id="name" placeholder="{{__('front.contact.form.name')}}" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">{{__('front.contact.form.email')}}</label>
+                    <input type="email" name="full_email" class="form-control" id="email" placeholder="{{__('front.contact.form.email')}}" aria-describedby="emailHelp" required>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="phone">{{__('front.contact.form.phone')}}</label>
+                    <input type="text" name="phone_number" class="form-control" id="phone" placeholder="{{__('front.contact.form.phone')}}" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">{{__('front.contact.form.subject')}}</label>
+                    <select class="form-control" name="subject" id="subject" required>
+                        <option value="{{__('front.contact.form.subject_options.01.value')}}">{{__('front.contact.form.subject_options.01.content')}}</option>
+                        <option value="{{__('front.contact.form.subject_options.02.value')}}">{{__('front.contact.form.subject_options.02.content')}}</option>
+                        <option value="{{__('front.contact.form.subject_options.03.value')}}">{{__('front.contact.form.subject_options.03.content')}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">{{__('front.contact.form.body')}}</label>
+                    <textarea class="form-control" name="message_body" id="message" rows="3" style="resize:none;" placeholder="{{__('front.contact.form.body')}}" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" name="submit">{{__('front.contact.form.submit')}}</button>
+            </form>
         </div>
     </div>
+  
 </div>
 
-<div class="container-fluid  map">
-    <div class="row">
-        <div class="col-lg-12">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.5871701165706!2d28.976994415415625!3d41.05615617929601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab72217aa2eab%3A0xc7f1195e790f4fe6!2sDivan%20Residence%20at%20Bomonti%20Plaza!5e0!3m2!1sen!2sus!4v1580846677295!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        </div>
-    </div>
-</div>
 
 <div class="container">
     <div class="row">

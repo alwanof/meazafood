@@ -69,7 +69,7 @@ html{
 }
 .map iframe{
     width: 100%;
-    height: 500px;
+    height: 350px;
 }
 .navbar-toggler i{
     color: #751915;

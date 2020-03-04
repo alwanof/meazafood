@@ -14,6 +14,7 @@
 use App\User;
 
 Route::get('/', 'ThemeController@index')->name('route_start');
+Route::post('/send/email', 'ContactController@send_message')->name('send_email');
 
 Route::get('/language/{language}','LanguageController@index')->name('switcher')->where('language','[A-Za-z]+');
 

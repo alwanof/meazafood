@@ -21,7 +21,7 @@ return [
         'menu_02'=>'Über uns',
         'menu_03'=>'Produkte',
         'menu_04'=>'Kontakt',
-        'menu_05'=>'Vertreter'
+        'menu_05'=>'Startseite'
     ],
     'slider'=>[
         'slider_01'=>[
