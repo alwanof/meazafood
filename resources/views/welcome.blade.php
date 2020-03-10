@@ -334,7 +334,117 @@
   
 </div>
 
+<!-- Footer -->
+<footer class="page-footer font-small indigo footer">
 
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto footer-col-1">
+
+                <!-- Links -->
+                <img class="img-fluid" src="{{asset('theme/img/logo.png')}}" title="{{__('front.general.alt')}}" title="{{__('front.general.title')}}">
+
+                <br> <br>
+
+                <a class="text-light mx-2 social-link" href="#" title="{{__('front.general.title')}}" target="_blank"><i class="fab fa-youtube fa-2x" title="Marasiel"></i>
+
+                <a class="text-light mx-2 social-link" href="#" title="{{__('front.general.title')}}" target="_blank"><i class="fab fa-twitter fa-2x" title="Marasiel"></i></a>
+
+                <a class="text-light mx-2 social-link" href="#" title="{{__('front.general.title')}}" target="_blank"><i class="fab fa-facebook-f fa-2x" title="Marasiel"></i></a>
+
+                <div class="mt-3"></div>
+
+                <a class="text-light" href="mailto:info@meazafood.com" title="{{__('front.general.title')}}"><i class="far fa-envelope" title="{{__('front.general.title')}}"></i> info@meazafood.com</a>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto footer-col-2 text-center">
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="{{route('route_start')}}/" class="text-white" title="{{__('front.general.title')}}">{{__('front.footer_links.col2.0')}}</a>
+                    </li>
+                    <li>
+                        <a href="{{route('route_start')}}/#about-us" class="text-white" title="{{__('front.general.title')}}">{{__('front.footer_links.col2.1')}}</a>
+                    </li>
+                    <li>
+                        <a href="{{route('route_start')}}/#products" class="text-white" title="{{__('front.general.title')}}">{{__('front.footer_links.col2.2')}}</a>
+                    </li>
+                    <li>
+                        <a href="{{route('route_start')}}/#contact" class="text-white" title="{{__('front.general.title')}}">{{__('front.footer_links.col2.3')}}</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto footer-col-3 text-center">
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!" class="text-white" title="{{__('front.general.title')}}">
+                            {{__('front.footer_links.col3.0')}}    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white" title="{{__('front.general.title')}}">
+                            {{__('front.footer_links.col3.1')}}    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white" title="{{__('front.general.title')}}">
+                            {{__('front.footer_links.col3.2')}}    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{route('route_start')}}/login" class="text-white" title="{{__('front.general.title')}}">
+                        {{__('front.footer_links.col3.3')}}
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto footer-col-4 text-center">
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#" class="text-white" title="{{__('front.general.title')}}">
+                            {{__('front.footer_links.col4.0')}}    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white" title="{{__('front.general.title')}}">
+                            {{__('front.footer_links.col4.1')}}    
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+</footer>
+<!-- Footer -->
 <div class="container">
     <div class="row">
         <div class="col-lg-12">

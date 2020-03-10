@@ -109,6 +109,24 @@ return [
         'instagram'=>'link',
         'youtube'=>'link',
     ],
+    'footer_links'=>[
+        'col2'=>[
+            'home',
+            'about',
+            'products',
+            'contact'
+        ],
+        'col3'=>[
+            'Reciept',
+            'Support',
+            'FAQ',
+            'Agent Login'
+        ],
+        'col4'=>[
+            'Privacy Policy',
+            'Terms & Conditions',
+        ]
+    ],
     'footer'=>[
         'copyrights'=>'all rights reserved 2020.',
     ]

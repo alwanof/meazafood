@@ -75,3 +75,56 @@ html{
     color: #751915;
     font-size: 25px;
 }
+.footer{
+    width: 100%;
+
+    height: auto;
+
+    background:#f1f1f1;
+}
+.footer li a{
+    color: #000 !important;
+    text-transform: uppercase;
+}
+
+.footer .footer-col-1{
+    padding: 40px 0;
+}
+
+.footer .footer-col-1 a{
+    color: #000 !important;
+}
+
+.footer .footer-col-1 a:hover{
+    text-decoration: none;
+}
+
+.footer .footer-col-1 a.social-link{
+    padding: 0 5px;
+}
+.footer .footer-col-1 a i{
+    color: #000 !important;
+}
+.footer .footer-col-2{
+    padding: 40px 0;
+}
+
+.footer .footer-col-2 ul li{
+    margin: 15px 0;
+}
+
+.footer .footer-col-3{
+    padding: 55px 0;
+}
+
+.footer .footer-col-3 ul li{
+    margin: 15px 0;
+}
+
+.footer .footer-col-4{
+    padding: 55px 0;
+}
+
+.footer .footer-col-4 ul li{
+    margin: 15px 0;
+}
