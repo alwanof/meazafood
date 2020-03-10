@@ -12,27 +12,7 @@
       </div><!-- /.container-fluid -->
 @endsection
 @section('content')
-    @php
-    function getColor($v){
-                $x=$v;
-                switch (true) {
-                    case ($x<20):
-                        return 'danger';
-                        break;
-                    case ($x<40):
-                        return 'warning';
-                        break;
-                    case ($x<75):
-                        return 'primary';
-                        break;
-                    default:
-                        return 'success';
-                        break;
 
-                }
-                }
-
-                @endphp
   <!-- Default box -->
   <div class="container">
       @can('access_orders_statistic')
@@ -40,9 +20,9 @@
           <div class="col-lg-3">
               <div class="small-box bg-gradient-gray">
                   <div class="inner">
-                      <h3>{{$data['oDraft']}}</h3>
+                      <h3>{{coolNumber($ordersFinance['draft'])}}<sup>$</sup></h3>
 
-                      <p>Drafts</p>
+                      <p>Drafts({{$data['oDraft']}})</p>
                   </div>
                   <div class="icon">
                       <i class="fa fa-drafting-compass"></i>
@@ -53,9 +33,9 @@
           <div class="col-lg-3">
               <div class="small-box bg-warning">
                   <div class="inner">
-                      <h3>{{$data['oPending']}}</h3>
+                      <h3>{{coolNumber($ordersFinance['pending'])}}<sup>$</sup></h3>
 
-                      <p>Pending</p>
+                      <p>Pending({{$data['oPending']}})</p>
                   </div>
                   <div class="icon">
                       <i class="far fa-pause-circle"></i>
@@ -66,9 +46,9 @@
           <div class="col-lg-3">
               <div class="small-box bg-info">
                   <div class="inner">
-                      <h3>{{$data['oApproved']}}</h3>
+                      <h3>{{coolNumber($ordersFinance['approved'])}}<sup>$</sup></h3>
 
-                      <p>Appeoved</p>
+                      <p>Appeoved({{$data['oApproved']}})</p>
                   </div>
                   <div class="icon">
                       <i class="fa fa-check nav-icon"></i>
@@ -79,9 +59,9 @@
           <div class="col-lg-3">
               <div class="small-box bg-success">
                   <div class="inner">
-                      <h3>{{$data['oDone']}}</h3>
+                      <h3>{{coolNumber($ordersFinance['done'])}}<sup>$</sup></h3>
 
-                      <p>Completed</p>
+                      <p>Completed({{$data['oDone']}})</p>
                   </div>
                   <div class="icon">
                       <i class="fas fa-check-double"></i>
@@ -110,7 +90,7 @@
                       @foreach($bestAgentsList as $agent)
                       <div class="progress-group" >
                            {{$agent->name}}
-                          <span class="float-right"><b>{{$agent->total}}<small><sup>$</sup></small></b></span>
+                          <span class="float-right"><b>{{coolNumber($agent->total)}}<small><sup>$</sup></small></b></span>
                           <div class="progress progress-sm mb-3">
                               <div class="'progress-bar bg-{{getColor(round(($agent->total*100/$maxBestAgents),0))}}" style="width: {{round(($agent->total*100/$maxBestAgents),0)}}%"></div>
                           </div>

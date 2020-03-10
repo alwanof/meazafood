@@ -61,6 +61,23 @@ class Order extends Model
         return $total;
     }
 
+    static public function finance($status,$user=0){
+        $total=0;
+        if($user==0){
+            $orders=Order::where('status',$status)->get();
+        }else{
+            $orders=Order::where('status',$status)->where('user_id',$user)->get();
+        }
+
+        foreach ($orders as $order){
+            $total=$total+$order->summary;
+        }
+
+        return $total;
+
+
+    }
+
     public function getCreatedAtAttribute()
     {
         return Carbon::createFromDate($this->attributes['created_at'])->diffForHumans();

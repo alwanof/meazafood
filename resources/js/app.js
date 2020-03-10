@@ -31,13 +31,26 @@ Vue.component('order-edit-component',require('./components/EditOrderComponent.vu
 Vue.component('order-edit-pending-component',require('./components/EditPendingOrderComponent.vue').default);
 Vue.component('order-edit-approved-component',require('./components/EditApprovedOrderComponent.vue').default);
 Vue.component('order-edit-completed-component',require('./components/EditCompletedOrderComponent.vue').default);
+function coolNumber(num){
+    if(num <1000){
+        return $num;
+    }
 
+    if(num <1000000){
+        return (num/1000)+'K';
+    }
+    if($num >=1000000){
+        return (num/1000000)+'M';
+    }
+}
 const CONFIG = {
     API_URL: 'https://'+window.location.hostname+'/public/api/',
     PATH: '/public',
     //API_URL: 'http://'+window.location.hostname+'/meazafood/public/api/',
     //PATH: '/meazafood/public',
-    LANG: translations
+    LANG: translations,
+    coolNumber:coolNumber
+
 }
 
 export default CONFIG;
