@@ -21,15 +21,26 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return Product::latest()->paginate(10);
+        try {
+            return Product::latest()->paginate(10);
+
+        }catch (Exception $e){
+            response()->json($e->getMessage(), 400);
+        }
+
     }
 
     public function search(Request $request)
     {
-        $products = Product::where('title', 'LIKE', '%' . $request->keywords . '%')
-            ->paginate(10);
+        try {
+            $products = Product::where('title', 'LIKE', '%' . $request->keywords . '%')
+                ->paginate(10);
 
-        return $products;
+            return $products;
+        }catch (Exception $e){
+            response()->json($e->getMessage(), $e->getCode());
+        }
+
     }
 
     public function store(Request $request)
@@ -47,7 +58,7 @@ class ProductController extends Controller
                 'unit' => $request->unit,
                 'price' => $request->price,
             ]);
-            return response()->json(1, 200);
+            return response()->json('inserted', 200);
         } catch (Exception $e) {
             return response()->json($e->getMessage(), 400);
         }
@@ -69,7 +80,7 @@ class ProductController extends Controller
             $product->unit = $request->unit;
             $product->price = $request->price;
             $product->save();
-            return response()->json(1, 200);
+            return response()->json('updated', 200);
         } catch (Exception $e) {
             return response()->json($e->getMessage(), 400);
         }
@@ -77,10 +88,15 @@ class ProductController extends Controller
 
     public function destroy($id)
     {
+        try {
+            $product = Product::find($id);
+            $product->delete();
+            return response()->json('removed', 200);
+        }catch (Exception $e){
+            return response()->json($e->getMessage(), 400);
+        }
 
-        $product = Product::find($id);
-        $product->delete();
-        return response()->json(1, 200);
+
     }
 
     public function get_all_product_for_order()

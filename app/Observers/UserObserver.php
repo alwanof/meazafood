@@ -18,8 +18,13 @@ class UserObserver
      */
     public function created(User $user)
     {
-        if (Configuration::where('name','new-user-welcome-email')->first()->value==1){
-            $user->notify(new WelcomeNewUser());
+
+
+        if (Configuration::where('name','new-user-welcome-email')->count()>0){
+            if(Configuration::where('name','new-user-welcome-email')->firstOrFail()->value==1){
+                $user->notify(new WelcomeNewUser());
+            }
+
         }
         $actor = auth()->user();
         $users = User::with('Settings')->where('id', '!=', $user->id)->where('id', '!=', $actor->id)->get();

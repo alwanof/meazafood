@@ -49,4 +49,8 @@ Route::group(['middleware' => ['auth:api']], function () {
     Route::post('item/new','API\ItemController@add_new_item');
     Route::get('order/{id}/informations','API\OrderController@get_order_info');
     Route::put('item/update/{id}','API\ItemController@update');
+
+
 });
+
+
