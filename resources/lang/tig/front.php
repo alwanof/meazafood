@@ -1,6 +1,11 @@
 <?php
 
 return [
+    'header'=>[
+        'title1'=>'መኣዛ ኣብ ተዳልዎ',
+        'title2'=>'መግቢ ግዜኻ ተቆጥብ',
+        'subtitle'=>'መኣዛ፡ ኣብ ድሉዋት፡ ከምኡውን ብከፊል ድሉዋት ዝኾኑ ናይ ምብራቕ ኣፍሪቃ “ናይ ሓበሻ” ምግብታት ዘድሃበ እዩ።'
+    ],
     'general'=>[
         'alt'=>'Meaza Food',
         'title'=>'Meaza Food',
@@ -21,7 +26,8 @@ return [
         'menu_02'=>'ብዛዕባና',
         'menu_03'=>'ፍርያትና',
         'menu_04'=>'ርኸቡና',
-        'menu_05'=>'ወኪል'
+        'menu_05'=>'ወኪል',
+        'menu_06'=>'ኣሰራርሓ መግቢ'
     ],
     'slider'=>[
         'slider_01'=>[
@@ -72,22 +78,46 @@ return [
         ',
     ],
     'products'=>[
-        'section_title'=>'ፍርያትና',
-        'product_01'=>[
-            'title'=>'Berbere Tomato Sause',
-            'description'=>'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
-        ],
-        'product_02'=>[
-            'title'=>'Chips',
-            'description'=>'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
-        ],
-        'product_03'=>[
-            'title'=>'Teff Pasta',
-            'description'=>'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+        'title'=>'Products',
+        'desc'=>'We stand as a prominent contributor to the international efforts to preserve environmental health and sound hygienic lifestyle. ',
+        'items'=>[
+            'titles'=>[
+                'A'=>'Berbere Tomato Sause',
+                'B'=>'Chips',
+                'C'=>'Teff Pasta'
+            ],
+            'photos'=>[
+                'A'=>'services-1.jpg',
+                'B'=>'services-2.jpg',
+                'C'=>'services-3.jpg'
+            ],
+            'desc'=>[
+                'A'=>'Meaza is a tasty combination of Berbere and spices, capers and 100% sun ripened organic tomatoes,Onion and garlic ',
+                'B'=>'Every day to the moment get-together, get pleasure from the instant with Meaza potato chips. Deliciously, hot fresh-tasting and tender,',
+                'C'=>'A super good gluten-free paste on teff and corn. This is a pasta for you who are gluten allergy or for those who love organic pasta but who think about what you put in you. '
+            ],
+            'li'=>[
+                'A'=> [
+                    'A'=>'Meaza is a best Habesha organic home style, Berbere Tomato sauce with different spices. 18.9 Ounce ( 530 g). ',
+                    'B'=>'20 feet container (MOQ).',
+                    'C'=>'FOB unit Price. '
+                ],
+                'B'=> [
+                    'A'=>'Meaza Berbere Spice Chips 170g Pack. ',
+                    'B'=>'20 feet container (MOQ).',
+                    'C'=>'FOB unit Price. '
+                ],
+                'C'=>[
+                    'A'=>'Meaza Teff Pasta gluten-free, EKO 400 g ',
+                    'B'=>'20 feet container (MOQ).',
+                    'C'=>'FOB unit Price. '
+                ],
+            ],
         ]
     ],
     'contact'=>[
-        'specific_keyword'=>'ርኸብ', // wanted to translate
+        'specific_keyword'=>'ርኸብ',
+        'desc'=>'Have a question or comment you want to share with the team? Enter your information below and send us a message. We’d love to hear from you!',// wanted to translate
         'title'=>'ክትረኽቡና',
         'address'=>[
             'title'=>'ኣድራሻና', // wanted to translate
