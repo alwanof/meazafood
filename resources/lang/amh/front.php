@@ -2,32 +2,32 @@
 
 return [
     'header'=>[
-        'title1'=>'የመአዛ ምግብ',
-        'title2'=>'ጊዜዎን ይቆጥብልዎታል',
-        'subtitle'=>'መአዛ  ሙሉና በከፊል ሚሰናዱ በአፍሪቃ ቀንድ የበሓበሻ ምግቦች ያተኮረ ነው።'
+        'title1'=>'መኣዛ',
+        'title2'=>'ግዜኻ ኣይባኸነን',
+        'subtitle'=>'መኣዛ፡ ኣብ ድሉዋት፡ ከምኡውን ብከፊል ድሉዋት ዝኾኑ ናይ ምብራቕ ኣፍሪቃ “ናይ ሓበሻ” ምግብታት ዘድሃበ እዩ።'
     ],
     'general'=>[
         'alt'=>'Meaza Food',
         'title'=>'Meaza Food',
     ],
     'languages'=>[
-        'title'=>'ቋንቋ',
+        'title'=>'ቋንቋ', // wanted to translate
         'عربي',
-        'english',
+        'English',
         'አማርኛ',
         'ትግርኛ',
-        'svenska',
+        'Svenska',
         'Deutsch'
     ],
     'title'=>'Meaza Food',
-    'default_page_name'=>'መነሻ ገጽ',
+    'default_page_name'=>'ቀዳማይ ገጽ',
     'menu'=>[
-        'menu_01'=>'መነሻ ገጽ',
-        'menu_02'=>'ስለ እኛ',
-        'menu_03'=>'ምርቶች',
-        'menu_04'=>'አግኙን',
-        'menu_05'=>'ወኪል ',
-        'menu_06'=>'የምግብ ኣሰራር'
+        'menu_01'=>'ቀዳማይ ገጽ', // wanted to translate
+        'menu_02'=>'ብዛዕባና',
+        'menu_03'=>'ፍርያትና',
+        'menu_04'=>'ርኸቡና',
+        'menu_05'=>'ወኪል',
+        'menu_06'=>'ኣሰራርሓ መግቢ'
     ],
     'slider'=>[
         'slider_01'=>[
@@ -48,33 +48,33 @@ return [
 
         ],
     ],
-    'specific_keyword'=>'ያግኙ',
+    'specific_keyword'=>'ርኸብ', // wanted to translate
     'about'=>[
-        'about_us_title'=>'መአዛ',
+        'about_us_title'=>'ብዛዕባ መኣዛ',
         'content'=>'
-        መአዛ  ሙሉና በከፊል ሚሰናዱ በአፍሪቃ ቀንድ የበሓበሻ ምግቦች ያተኮረ ነው። ምርታችን በቀንዱ “በሓበሻ ምግብ አሰራር ዘዴ በተለይ በቀመሞቹና፡ ቁሌት ፓስታ ቺፕስ ወዘተ… ያለዉን መአዛዊ ደረጃው በትኩስነቱና ደህንነቱ ለመጠበቅ ትኩረት ያደርጋል።
+            መኣዛ፡ ኣብ ድሉዋት፡ ከምኡውን ብከፊል ድሉዋት ዝኾኑ ናይ ምብራቕ ኣፍሪቃ “ናይ ሓበሻ” ምግብታት ዘድሃበ እዩ። እቶም ፍርያትና ብቀንዱ፡ ኣብ “ናይ ሓበሻ ኣከሻሽና”፡ ብፍላይ ድማ ናታቶም ቀመማት “ ዝግኒ፡ፓስታ፡ቺብስ ወዘተ”፡ ነቲ ዘለውዎ መኣዛዊ ትሕዝቶ፡ ሓድሽነትን ውሕስነትን ንምዕቃብ ኣብ ዘረጋግጽ ኣገባብ ዘተኮሩ እዮም።
         ',
-        'vision_title'=>'ራዕያችን',
+        'vision_title'=>'ራኢና',
         'vision_content'=>'
-        ከአሁኑ በዓለም አቀፋዊ ሂወት ዘይቤ ፍጥነት የተለይ ባህላዊ እሴት መልኩ ባህርያቱ ሳያጠፉ ለመጓዝ ነው።
-        መቀረቱ፣ ጣዕሙና ስሜት በመያዝ ያለዉን ልዩነት ለመጠበቅ እንዲያግዝ ለመርዳት ነው።
-        ',
-        'mission_title'=>'ተልእኮው',
+            ንፍሉያት ባህላውያን ባህርታት ከየወገድካ፡ ምስቲ ዓለምለኻዊ ባህርያት ናይ ህሉው ፍጥነት ቅዲ-ህይወት ዓለምና ምስጓም እዩ።
+            ምስቶም ምስ ፍሉይነትካ ዘተኣሳስሩኻ መቐረት፡ ጣዕሚ ቃና፡ ከምኡውን ኩነተ-ኣእምሮ ሓቢርካ ንክትስጉም ንክንሕግዘካ።
+       ',
+        'mission_title'=>'ተልእኾና',
         'mission_content'=>'
-            ምርጡን ምግብ ለመሰናዳት የግዜ ጥረትን ለመቆጠብ አከባብያዊና ደህንነታዊ ጉዳቶች ለመዳን፣
-            በምትፈልጉት ግዜና ቦታ ምርጫቹህና  የምትወዱን  ምግብ ማቅረብ።
+           ነቲ እትፈትውዎ መግቢ ኣብ ምድላው ግዜኹምን ጸዓትኩምን ንምድሓን፡ ከምኡውን ካልኦት ኣከባብያውያንን ድሕነታውያን ጽልዋታት ንምክልኻል።
+            ናይ ባዕልኹም ወይ ንእትፈትውዎ መግቢ ኣብቲ ዝመረጽኩሞ ግዜብ ቦታን ንከነቕርበልኩም።
         ',
-        'objectives_title'=>'አላማ',
+        'objectives_title'=>'ዕላማታትና',
         'objectives_content'=>'
-            ምግብ መሰናዳት ድርሻ ለውጥ ፈጣሪ ቀዳሚ ኩባንያ ሆነን ለማደግ
-            በዓለም ዜጎች መካከል የተለየና አዲስ ዘይቤ በመፍጠር፣ ተጠቃሚ ብቻ ሳይሆን የሳቸው ስልጣኔ ፈጣሪዎች መሆናቸውና ያላቸው እርስ በርሳቸው መረዳዳት መዳበር እንዲቻል
-            በዓለም አቀፍ በሚደረግ ጥረት አከባቢያዊ ንፅህናው የጠብቀ ኑሮ ዘይቤ ስመጥር አቅራቢ ሆኖ መቆም።
+            ኣብ ዓውዲ ምድላው መግቢ፡ ለውጢ ዘመንጩ መራሒ ኩባንያ ኮይንና ንክንዓቢ።
+            ኣብ መንጎ ዜጋታት ናይ ዓለምና ፍሉይን ሓድሽን ኣገባብ ብምፍጣር፡ ነቲ ኣህለኽቲ ጥራይ ዘይኮኑስ ፈጠርቲ ናይ ባዕላቶም ስልጣነታት ምዃኖም ዘለዎም ሓድሕዳዊ ርድኢት ከተሀብትም ምኽኣል።
+            ኣብቲ ኣከባብያዊ ጥዕናን ቅርዑው ጽርየታዊ ቅዲ ህይወትን ንምዕቃብ ዝካየድ ዘሎ ዓለምለኻዊ ጻዕርታት ጉሉሕ ኣበርክቶ ዝገብር ኣካል ምዃን።
         ',
-        'values_title'=>'ክብር',
+        'values_title'=>'ክብርታትና',
         'values_content'=>'
-            ስነ-ሂወታዊ ብዙህነትና አከባብያዊ ሚዛን መጠበቅ ቅድሚያው ነው።
-            ሰውና አከባቢ ተስማሚ ባህርያዊ ምግብ ኣስፈላጊነት ማቶኮር።
-            ንግድ ከቅንነት ኣንጻር ውስብስብ ቅማሬዎችን በጥንቃቄ  መተግበር።
+            ህይወታዊ ብዙሕነት ምዕቃብን ንሚዛን ስርዓተ ኣከባቢ ምንክብኻብን ዝለዓለ ኣተኩሮ ዝወሃቦ እዩ።
+            ነቲ ንደቂ ሰባትን ንኣከባቢን ጠቓሚ ዝኾነ ባህርያዊ ምግቢ ኣተኩሮ ምሃብ።
+            ነቲ ንግዲ ብመንጽር ቅንዕና ዝብል ከቢድ ምዕሪት ብጥንቃቐ ንምዝማዱ።
         ',
     ],
     'products'=>[
@@ -82,7 +82,7 @@ return [
         'desc'=>'We stand as a prominent contributor to the international efforts to preserve environmental health and sound hygienic lifestyle. ',
         'items'=>[
             'titles'=>[
-                'A'=>'Berbere Tomato Sause',
+                'A'=>'Berbere Tomato Sauce',
                 'B'=>'Chips',
                 'C'=>'Teff Pasta'
             ],
@@ -116,11 +116,11 @@ return [
         ]
     ],
     'contact'=>[
-        'specific_keyword'=>'ያግኙ',
-        'desc'=>'Have a question or comment you want to share with the team? Enter your information below and send us a message. We’d love to hear from you!',
-        'title'=>'አግኙን',
+        'specific_keyword'=>'ርኸብ',
+        'desc'=>'Have a question or comment you want to share with the team? Enter your information below and send us a message. We’d love to hear from you!',// wanted to translate
+        'title'=>'ክትረኽቡና',
         'address'=>[
-            'title'=>'ኣድራሻችን',
+            'title'=>'ኣድራሻና', // wanted to translate
             'content'=>'Divan Residence at Bomonti Plaza Cumhuriyet, Harika Sk. No: 4, 34380 Şişli/İstanbul',
         ],
         'tel'=>'+90 531 892 74 13',
@@ -134,6 +134,7 @@ return [
         'youtube'=>'link',
     ],
     'footer'=>[
-        'copyrights'=>'all rights reserved 2020.',
+        'Copyrights'=>'All rights reserved 2020.',
     ]
 ];
+

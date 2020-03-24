@@ -13,10 +13,10 @@ return [
     'languages'=>[
         'title'=>'اللغات',
         'عربي',
-        'english',
+        'English',
         'አማርኛ',
         'ትግርኛ',
-        'svenska',
+        'Svenska',
         'Deutsch'
     ],
     'title'=>'Meaza Food',
@@ -108,7 +108,7 @@ return [
             ],
         ]
     ],
-    'contact'=>[
+    'Contact'=>[
         'specific_keyword'=>'اكتشف المزيد',
         'desc'=>'Have a question or comment you want to share with the team? Enter your information below and send us a message. We’d love to hear from you!',
         'title'=>'تواصل معنا',
@@ -116,9 +116,9 @@ return [
             'title'=>'العنوان :',
             'content'=>'Divan Residence at Bomonti Plaza Cumhuriyet, Harika Sk. No: 4, 34380 Şişli/İstanbul',
         ],
-        'tel'=>'+90 531 892 74 13',
-        'email'=>'info@meazafood.com',
-        'work_time'=>'9:00 AM - 6:00 PM'
+        'Tel'=>'+90 531 892 74 13',
+        'Email'=>'info@meazafood.com',
+        'Work_time'=>'9:00 AM - 6:00 PM'
     ],
     'social_media'=>[
         'facebook'=>'link',
@@ -145,6 +145,7 @@ return [
         ]
     ],
     'footer'=>[
-        'copyrights'=>'all rights reserved 2020.',
+        'Copyrights'=>'All rights reserved 2020.',
     ]
 ];
+

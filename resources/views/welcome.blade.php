@@ -96,31 +96,46 @@
 
                 <div class="col-lg-2 col-md-4 col-6">
                     <div class="client-logo">
-                        <i class="flag-icon flag-icon-se display-3" data-aos="flip-right"></i>
+                        <a href="{{route('switcher','sw')}}">
+                            <i class="flag-icon flag-icon-se display-3" data-aos="flip-right"></i>
+                        </a>
+
                     </div>
                 </div>
 
                 <div class="col-lg-2 col-md-4 col-6">
                     <div class="client-logo">
-                        <i class="flag-icon flag-icon-de display-3" data-aos="flip-right"></i>
+                        <a href="{{route('switcher','gr')}}">
+                            <i class="flag-icon flag-icon-de display-3" data-aos="flip-right"></i>
+                        </a>
+
                     </div>
                 </div>
 
                 <div class="col-lg-2 col-md-4 col-6">
                     <div class="client-logo">
-                        <i class="flag-icon flag-icon-sa display-3" data-aos="flip-right"></i>
+                        <a href="{{route('switcher','ar')}}">
+                            <i class="flag-icon flag-icon-sa display-3" data-aos="flip-right"></i>
+                        </a>
+
                     </div>
                 </div>
 
                 <div class="col-lg-2 col-md-4 col-6">
                     <div class="client-logo">
-                        <i class="flag-icon flag-icon-et display-3" data-aos="flip-right"></i>
+                        <a href="{{route('switcher','amh')}}">
+                            <i class="flag-icon flag-icon-et display-3" data-aos="flip-right"></i>
+                        </a>
+
                     </div>
                 </div>
 
                 <div class="col-lg-2 col-md-4 col-6" >
                     <div class="client-logo">
-                        <i class="flag-icon flag-icon-er display-3" data-aos="flip-right"></i>
+                        <a href="{{route('switcher','tig')}}">
+                            <i class="flag-icon flag-icon-er display-3" data-aos="flip-right"></i>
+                        </a>
+
                     </div>
                 </div>
 

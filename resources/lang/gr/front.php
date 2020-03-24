@@ -2,8 +2,8 @@
 
 return [
     'header'=>[
-        'title1'=>'Meaza Essen',
-        'title2'=>'spart Ihnen Zeit',
+        'title1'=>'Meaza',
+        'title2'=>'Spart Ihnen Zeit',
         'subtitle'=>'Mazza ist ein Unternehmen, das sich auf die Zubereitung von ost afrikanischen bzw "abessinischen'
     ],
     'general'=>[
@@ -11,22 +11,22 @@ return [
         'title'=>'Meaza Food',
     ],
     'languages'=>[
-        'title'=>'sprache',
+        'title'=>'Sprache',
         'عربي',
-        'english',
+        'English',
         'አማርኛ',
         'ትግርኛ',
-        'svenska',
+        'Svenska',
         'Deutsch'
     ],
     'title'=>'Meaza Food',
     'default_page_name'=>'Zuhause',
     'menu'=>[
-        'menu_01'=>'Zuhause',
+        'menu_01'=>'Startseite',
         'menu_02'=>'Über uns',
         'menu_03'=>'Produkte',
         'menu_04'=>'Kontakt',
-        'menu_05'=>'Startseite',
+        'menu_05'=>'Vertreter',
         'menu_06'=>'Rezept'
     ],
     'slider'=>[
@@ -83,7 +83,7 @@ return [
         'desc'=>'We stand as a prominent contributor to the international efforts to preserve environmental health and sound hygienic lifestyle. ',
         'items'=>[
             'titles'=>[
-                'A'=>'Berbere Tomato Sause',
+                'A'=>'Berbere Tomato Sauce',
                 'B'=>'Chips',
                 'C'=>'Teff Pasta'
             ],
@@ -116,7 +116,7 @@ return [
             ],
         ]
     ],
-    'contact'=>[
+    'Contact'=>[
         'specific_keyword'=>'Get In Touch',
         'desc'=>'Have a question or comment you want to share with the team? Enter your information below and send us a message. We’d love to hear from you!',
         'title'=>'Kontaktiere uns',
@@ -135,6 +135,7 @@ return [
         'youtube'=>'link',
     ],
     'footer'=>[
-        'copyrights'=>'all rights reserved 2020.',
+        'Copyrights'=>'All rights reserved 2020.',
     ]
 ];
+

@@ -7,8 +7,6 @@
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/front.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/front.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/front.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/front.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/gr/front.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/gr/front.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/sw/front.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/sw/front.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/tig/front.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/tig/front.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -183,7 +181,8 @@
       <workItem from="1584382475429" duration="3539000" />
       <workItem from="1584434475066" duration="1953000" />
       <workItem from="1584612290307" duration="4804000" />
-      <workItem from="1584867992203" duration="8902000" />
+      <workItem from="1584867992203" duration="9695000" />
+      <workItem from="1585034995212" duration="3201000" />
     </task>
     <servers />
   </component>
@@ -257,12 +256,12 @@
     <state x="184" y="4" key="SettingsEditor/0.0.1366.728/1366.0.1920.1080@0.0.1366.728" timestamp="1583772031459" />
     <state x="2144" y="203" key="SettingsEditor/0.0.1366.728/1366.0.1920.1080@1366.0.1920.1080" timestamp="1584019103893" />
     <state x="368" y="13" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584110690642" />
-    <state x="402" y="217" key="com.intellij.ide.util.TipDialog" timestamp="1584612296808">
+    <state x="402" y="217" key="com.intellij.ide.util.TipDialog" timestamp="1585035036903">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="402" y="217" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1920.1080@0.0.1366.728" timestamp="1584007616506" />
     <state x="1931" y="322" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1920.1080@1366.0.1920.1080" timestamp="1583334739494" />
-    <state x="402" y="217" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584612296808" />
+    <state x="402" y="217" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585035036903" />
     <state x="2013" y="144" width="626" height="792" key="find.popup" timestamp="1584012128499">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>

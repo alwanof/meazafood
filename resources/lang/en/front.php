@@ -2,31 +2,31 @@
 
 return [
     'header'=>[
-        'title1'=>'Meazafood',
-        'title2'=>'Save You Time',
+        'title1'=>'Meaza',
+        'title2'=>'Saves You Time',
         'subtitle'=>'Specializes in East African “Habasha” prepared and partially prepared food'
     ],
     'general'=>[
         'alt'=>'Meaza Food',
         'title'=>'Meaza Food',
     ],
-    'languages'=>[
+    'Languages'=>[
         'title'=>'languages',
         'عربي',
-        'english',
+        'English',
         'አማርኛ',
         'ትግርኛ',
-        'svenska',
+        'Svenska',
         'Deutsch'
     ],
     'title'=>'Meaza Food',
     'default_page_name'=>'Home',
     'menu'=>[
-        'menu_01'=>'home',
-        'menu_02'=>'about',
-        'menu_03'=>'products',
-        'menu_04'=>'contact',
-        'menu_05'=>'agent',
+        'menu_01'=>'Home',
+        'menu_02'=>'About',
+        'menu_03'=>'Products',
+        'menu_04'=>'Contact',
+        'menu_05'=>'Agent',
         'menu_06'=>'Reciep'
     ],
     'slider'=>[
@@ -49,9 +49,9 @@ return [
         ],
     ],
     'specific_keyword'=>'Discover',
-    'about'=>[
-        'about_us_title'=>'about us',
-        'content'=>'MEAZA specializes in East African “Habasha” prepared and partially prepared food. Our products mainly focus on the “Habasha Cuisine” particularly the spicy of them “Zigni, Pasta, chips, etc. in a way that maintains its nutritional value along with freshness and safety.',
+    'About'=>[
+        'About_us_title'=>'about us',
+        'Content'=>'MEAZA specializes in East African “Habasha” prepared and partially prepared food. Our products mainly focus on the “Habasha Cuisine” particularly the spicy of them “Zigni, Pasta, chips, etc. in a way that maintains its nutritional value along with freshness and safety.',
         'vision_title'=>'Vision:',
         'vision_content'=>'To keep up with the global nature of today world’s life-style tempo without the dismissal of unique cultural features.To help you to stay connected with the taste, flavor and mood that keep you in touch with your uniqueness.',
         'mission_title'=>'Mission:',
@@ -62,11 +62,11 @@ return [
         'values_content'=>'Preserving biodiversity and maintaining the ecosystems balance is on the top.To emphasize the importance of the human and environment friendly organic food. To deal carefully with the hard equation of business vs integrity.',
     ],
     'products'=>[
-       'title'=>'Products',
+        'title'=>'Products',
         'desc'=>'We stand as a prominent contributor to the international efforts to preserve environmental health and sound hygienic lifestyle. ',
         'items'=>[
             'titles'=>[
-                'A'=>'Berbere Tomato Sause',
+                'A'=>'Berbere Tomato Sauce',
                 'B'=>'Chips',
                 'C'=>'Teff Pasta'
             ],
@@ -75,7 +75,7 @@ return [
                 'B'=>'services-2.jpg',
                 'C'=>'services-3.jpg'
             ],
-            'desc'=>[
+            'Desc'=>[
                 'A'=>'Meaza is a tasty combination of Berbere and spices, capers and 100% sun ripened organic tomatoes,Onion and garlic ',
                 'B'=>'Every day to the moment get-together, get pleasure from the instant with Meaza potato chips. Deliciously, hot fresh-tasting and tender,',
                 'C'=>'A super good gluten-free paste on teff and corn. This is a pasta for you who are gluten allergy or for those who love organic pasta but who think about what you put in you. '
@@ -99,7 +99,7 @@ return [
             ],
         ]
     ],
-    'contact'=>[
+    'Contact'=>[
         'specific_keyword'=>'Get In Touch',
         'desc'=>'Have a question or comment you want to share with the team? Enter your information below and send us a message. We’d love to hear from you!',
         'title'=>'Contact Us',
@@ -141,13 +141,13 @@ return [
     ],
     'footer_links'=>[
         'col2'=>[
-            'home',
-            'about',
-            'products',
-            'contact'
+            'Home',
+            'About',
+            'Products',
+            'Contact'
         ],
         'col3'=>[
-            'Reciept',
+            'Reciep',
             'Support',
             'FAQ',
             'Agent Login'
@@ -158,6 +158,7 @@ return [
         ]
     ],
     'footer'=>[
-        'copyrights'=>'all rights reserved 2020.',
+        'Copyrights'=>'All rights reserved 2020.',
     ]
 ];
+
