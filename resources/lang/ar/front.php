@@ -118,7 +118,29 @@ return [
         ],
         'Tel'=>'+90 531 892 74 13',
         'Email'=>'info@meazafood.com',
-        'Work_time'=>'9:00 AM - 6:00 PM'
+        'Work_time'=>'9:00 AM - 6:00 PM',
+        'form'=>[
+            'name'=>'Full Name',
+            'email'=>'Email Address',
+            'phone'=>'Phone Number',
+            'subject'=>'Subject',
+            'subject_options'=>[
+                '01'=>[
+                    'value'=>'complaint',
+                    'content'=>'Complaint',
+                ],
+                '02'=>[
+                    'value'=>'suggestion',
+                    'content'=>'Suggestion',
+                ],
+                '03'=>[
+                    'value'=>'become_agent',
+                    'content'=>'Become an Agent',
+                ],
+            ],
+            'body'=>'Message',
+            'submit'=>'Send Message'
+        ],
     ],
     'social_media'=>[
         'facebook'=>'link',

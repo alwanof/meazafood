@@ -2,8 +2,8 @@
 
 return [
     'header'=>[
-        'title1'=>'Meaza mat',
-        'title2'=>'sparar tid',
+        'title1'=>'Meaza',
+        'title2'=>'Sparar tid',
         'subtitle'=>'MEAZA specialiserar sig på Öst Afrikansk - "Habesha" mat som är både tillagad och nästintill tillagad.'
     ],
     'general'=>[
@@ -11,12 +11,12 @@ return [
         'title'=>'Meaza Food',
     ],
     'languages'=>[
-        'title'=>'språk',
+        'title'=>'Språk',
         'عربي',
-        'english',
+        'English',
         'አማርኛ',
         'ትግርኛ',
-        'svenska',
+        'Svenska',
         'Deutsch'
     ],
     'title'=>'Meaza Food',
@@ -125,7 +125,29 @@ return [
         ],
         'tel'=>'+90 531 892 74 13',
         'email'=>'info@meazafood.com',
-        'work_time'=>'9:00 AM - 6:00 PM'
+        'work_time'=>'9:00 AM - 6:00 PM',
+        'form'=>[
+            'name'=>'Full Name',
+            'email'=>'Email Address',
+            'phone'=>'Phone Number',
+            'subject'=>'Subject',
+            'subject_options'=>[
+                '01'=>[
+                    'value'=>'complaint',
+                    'content'=>'Complaint',
+                ],
+                '02'=>[
+                    'value'=>'suggestion',
+                    'content'=>'Suggestion',
+                ],
+                '03'=>[
+                    'value'=>'become_agent',
+                    'content'=>'Become an Agent',
+                ],
+            ],
+            'body'=>'Message',
+            'submit'=>'Send Message'
+        ],
     ],
     'social_media'=>[
         'facebook'=>'link',
@@ -134,6 +156,7 @@ return [
         'youtube'=>'link',
     ],
     'footer'=>[
-        'copyrights'=>'all rights reserved 2020.',
+        'Copyrights'=>'All rights reserved 2020.',
     ]
 ];
+

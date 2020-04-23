@@ -10,7 +10,7 @@ return [
         'alt'=>'Meaza Food',
         'title'=>'Meaza Food',
     ],
-    'Languages'=>[
+    'languages'=>[
         'title'=>'languages',
         'عربي',
         'English',
@@ -49,9 +49,9 @@ return [
         ],
     ],
     'specific_keyword'=>'Discover',
-    'About'=>[
-        'About_us_title'=>'about us',
-        'Content'=>'MEAZA specializes in East African “Habasha” prepared and partially prepared food. Our products mainly focus on the “Habasha Cuisine” particularly the spicy of them “Zigni, Pasta, chips, etc. in a way that maintains its nutritional value along with freshness and safety.',
+    'about'=>[
+        'about_us_title'=>'about us',
+        'content'=>'MEAZA specializes in East African “Habasha” prepared and partially prepared food. Our products mainly focus on the “Habasha Cuisine” particularly the spicy of them “Zigni, Pasta, chips, etc. in a way that maintains its nutritional value along with freshness and safety.',
         'vision_title'=>'Vision:',
         'vision_content'=>'To keep up with the global nature of today world’s life-style tempo without the dismissal of unique cultural features.To help you to stay connected with the taste, flavor and mood that keep you in touch with your uniqueness.',
         'mission_title'=>'Mission:',
@@ -99,7 +99,7 @@ return [
             ],
         ]
     ],
-    'Contact'=>[
+    'contact'=>[
         'specific_keyword'=>'Get In Touch',
         'desc'=>'Have a question or comment you want to share with the team? Enter your information below and send us a message. We’d love to hear from you!',
         'title'=>'Contact Us',
@@ -158,7 +158,7 @@ return [
         ]
     ],
     'footer'=>[
-        'Copyrights'=>'All rights reserved 2020.',
+        'copyrights'=>'All rights reserved 2020.',
     ]
 ];
 

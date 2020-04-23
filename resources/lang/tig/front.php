@@ -2,8 +2,8 @@
 
 return [
     'header'=>[
-        'title1'=>'መኣዛ ኣብ ተዳልዎ',
-        'title2'=>'መግቢ ግዜኻ ተቆጥብ',
+        'title1'=>'መኣዛ',
+        'title2'=>'ግዜኻ ኣይባኸነን',
         'subtitle'=>'መኣዛ፡ ኣብ ድሉዋት፡ ከምኡውን ብከፊል ድሉዋት ዝኾኑ ናይ ምብራቕ ኣፍሪቃ “ናይ ሓበሻ” ምግብታት ዘድሃበ እዩ።'
     ],
     'general'=>[
@@ -13,10 +13,10 @@ return [
     'languages'=>[
         'title'=>'ቋንቋ', // wanted to translate
         'عربي',
-        'english',
+        'English',
         'አማርኛ',
         'ትግርኛ',
-        'swdish',
+        'Svenska',
         'Deutsch'
     ],
     'title'=>'Meaza Food',
@@ -54,23 +54,23 @@ return [
         'content'=>'
             መኣዛ፡ ኣብ ድሉዋት፡ ከምኡውን ብከፊል ድሉዋት ዝኾኑ ናይ ምብራቕ ኣፍሪቃ “ናይ ሓበሻ” ምግብታት ዘድሃበ እዩ። እቶም ፍርያትና ብቀንዱ፡ ኣብ “ናይ ሓበሻ ኣከሻሽና”፡ ብፍላይ ድማ ናታቶም ቀመማት “ ዝግኒ፡ፓስታ፡ቺብስ ወዘተ”፡ ነቲ ዘለውዎ መኣዛዊ ትሕዝቶ፡ ሓድሽነትን ውሕስነትን ንምዕቃብ ኣብ ዘረጋግጽ ኣገባብ ዘተኮሩ እዮም።
         ',
-        'vision_title'=>'ራኢና፦',
+        'vision_title'=>'ራኢና',
         'vision_content'=>'
             ንፍሉያት ባህላውያን ባህርታት ከየወገድካ፡ ምስቲ ዓለምለኻዊ ባህርያት ናይ ህሉው ፍጥነት ቅዲ-ህይወት ዓለምና ምስጓም እዩ።
             ምስቶም ምስ ፍሉይነትካ ዘተኣሳስሩኻ መቐረት፡ ጣዕሚ ቃና፡ ከምኡውን ኩነተ-ኣእምሮ ሓቢርካ ንክትስጉም ንክንሕግዘካ።
        ',
-        'mission_title'=>'ተልእኾና፦',
+        'mission_title'=>'ተልእኾና',
         'mission_content'=>'
            ነቲ እትፈትውዎ መግቢ ኣብ ምድላው ግዜኹምን ጸዓትኩምን ንምድሓን፡ ከምኡውን ካልኦት ኣከባብያውያንን ድሕነታውያን ጽልዋታት ንምክልኻል።
             ናይ ባዕልኹም ወይ ንእትፈትውዎ መግቢ ኣብቲ ዝመረጽኩሞ ግዜብ ቦታን ንከነቕርበልኩም።
         ',
-        'objectives_title'=>'ዕላማታትና፦',
+        'objectives_title'=>'ዕላማታትና',
         'objectives_content'=>'
             ኣብ ዓውዲ ምድላው መግቢ፡ ለውጢ ዘመንጩ መራሒ ኩባንያ ኮይንና ንክንዓቢ።
             ኣብ መንጎ ዜጋታት ናይ ዓለምና ፍሉይን ሓድሽን ኣገባብ ብምፍጣር፡ ነቲ ኣህለኽቲ ጥራይ ዘይኮኑስ ፈጠርቲ ናይ ባዕላቶም ስልጣነታት ምዃኖም ዘለዎም ሓድሕዳዊ ርድኢት ከተሀብትም ምኽኣል።
             ኣብቲ ኣከባብያዊ ጥዕናን ቅርዑው ጽርየታዊ ቅዲ ህይወትን ንምዕቃብ ዝካየድ ዘሎ ዓለምለኻዊ ጻዕርታት ጉሉሕ ኣበርክቶ ዝገብር ኣካል ምዃን።
         ',
-        'values_title'=>'ክብርታትና፦',
+        'values_title'=>'ክብርታትና',
         'values_content'=>'
             ህይወታዊ ብዙሕነት ምዕቃብን ንሚዛን ስርዓተ ኣከባቢ ምንክብኻብን ዝለዓለ ኣተኩሮ ዝወሃቦ እዩ።
             ነቲ ንደቂ ሰባትን ንኣከባቢን ጠቓሚ ዝኾነ ባህርያዊ ምግቢ ኣተኩሮ ምሃብ።
@@ -82,7 +82,7 @@ return [
         'desc'=>'We stand as a prominent contributor to the international efforts to preserve environmental health and sound hygienic lifestyle. ',
         'items'=>[
             'titles'=>[
-                'A'=>'Berbere Tomato Sause',
+                'A'=>'Berbere Tomato Sauce',
                 'B'=>'Chips',
                 'C'=>'Teff Pasta'
             ],
@@ -125,7 +125,29 @@ return [
         ],
         'tel'=>'+90 531 892 74 13',
         'email'=>'info@meazafood.com',
-        'work_time'=>'9:00 AM - 6:00 PM'
+        'work_time'=>'9:00 AM - 6:00 PM',
+        'form'=>[
+            'name'=>'Full Name',
+            'email'=>'Email Address',
+            'phone'=>'Phone Number',
+            'subject'=>'Subject',
+            'subject_options'=>[
+                '01'=>[
+                    'value'=>'complaint',
+                    'content'=>'Complaint',
+                ],
+                '02'=>[
+                    'value'=>'suggestion',
+                    'content'=>'Suggestion',
+                ],
+                '03'=>[
+                    'value'=>'become_agent',
+                    'content'=>'Become an Agent',
+                ],
+            ],
+            'body'=>'Message',
+            'submit'=>'Send Message'
+        ],
     ],
     'social_media'=>[
         'facebook'=>'link',
@@ -134,6 +156,7 @@ return [
         'youtube'=>'link',
     ],
     'footer'=>[
-        'copyrights'=>'all rights reserved 2020.',
+        'Copyrights'=>'All rights reserved 2020.',
     ]
 ];
+

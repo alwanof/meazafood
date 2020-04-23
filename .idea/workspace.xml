@@ -7,7 +7,8 @@
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/front.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/front.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/front.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/front.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/gr/front.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/gr/front.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/sw/front.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/sw/front.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/tig/front.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/tig/front.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,9 +131,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -182,7 +183,11 @@
       <workItem from="1584434475066" duration="1953000" />
       <workItem from="1584612290307" duration="4804000" />
       <workItem from="1584867992203" duration="9695000" />
-      <workItem from="1585034995212" duration="3201000" />
+      <workItem from="1585034995212" duration="5350000" />
+      <workItem from="1585222986654" duration="158000" />
+      <workItem from="1585326737870" duration="105000" />
+      <workItem from="1587653687068" duration="1759000" />
+      <workItem from="1587656273897" duration="42000" />
     </task>
     <servers />
   </component>
@@ -206,9 +211,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="344" y="25" width="691" height="677" key="#phpunit.xml/0.0.1366.728/1366.0.1920.1080@0.0.1366.728" timestamp="1583773948567" />
-    <state x="2056" y="238" key="FileChooserDialogImpl" timestamp="1583334758228">
-      <screen x="1366" y="0" width="1920" height="1080" />
+    <state x="2056" y="229" key="FileChooserDialogImpl" timestamp="1587656269754">
+      <screen x="1366" y="0" width="1920" height="1040" />
     </state>
+    <state x="2056" y="229" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1587656269754" />
     <state x="2056" y="238" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1920.1080@1366.0.1920.1080" timestamp="1583334758228" />
     <state width="1323" height="19" key="GridCell.Tab.0.bottom" timestamp="1584448335497">
       <screen x="0" y="0" width="1366" height="728" />
@@ -250,17 +256,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="206" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1584286013337" />
-    <state x="368" y="13" key="SettingsEditor" timestamp="1584110690642">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="2144" y="203" key="SettingsEditor" timestamp="1585223109500">
+      <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="184" y="4" key="SettingsEditor/0.0.1366.728/1366.0.1920.1080@0.0.1366.728" timestamp="1583772031459" />
-    <state x="2144" y="203" key="SettingsEditor/0.0.1366.728/1366.0.1920.1080@1366.0.1920.1080" timestamp="1584019103893" />
+    <state x="2144" y="203" key="SettingsEditor/0.0.1366.728/1366.0.1920.1080@1366.0.1920.1080" timestamp="1585223109500" />
     <state x="368" y="13" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584110690642" />
-    <state x="402" y="217" key="com.intellij.ide.util.TipDialog" timestamp="1585035036903">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="1931" y="322" key="com.intellij.ide.util.TipDialog" timestamp="1585222987295">
+      <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="402" y="217" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1920.1080@0.0.1366.728" timestamp="1584007616506" />
-    <state x="1931" y="322" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1920.1080@1366.0.1920.1080" timestamp="1583334739494" />
+    <state x="1931" y="322" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1920.1080@1366.0.1920.1080" timestamp="1585222987295" />
     <state x="402" y="217" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585035036903" />
     <state x="2013" y="144" width="626" height="792" key="find.popup" timestamp="1584012128499">
       <screen x="1366" y="0" width="1920" height="1080" />
