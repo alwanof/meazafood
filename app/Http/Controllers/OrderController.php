@@ -36,7 +36,7 @@ class OrderController extends Controller
             'agent_delete_draft_order' => (Gate::allows('agent_delete_draft_order')) ? true : false,
         ];
 
-        return view('orders.index',compact(['acl']));
+        return view('orders.index', compact(['acl']));
     }
 
     public function pending_orders()
@@ -46,7 +46,7 @@ class OrderController extends Controller
             'admin_delete_pending_order' => (Gate::allows('admin_delete_pending_order')) ? true : false,
         ];
 
-        return view('orders.pending',compact(['acl']));
+        return view('orders.pending', compact(['acl']));
     }
 
     public function approved_orders()
@@ -56,7 +56,7 @@ class OrderController extends Controller
             'admin_delete_approved_order' => (Gate::allows('admin_delete_approved_order')) ? true : false,
         ];
 
-        return view('orders.approved',compact(['acl']));
+        return view('orders.approved', compact(['acl']));
     }
 
     public function completed_orders()
@@ -66,7 +66,7 @@ class OrderController extends Controller
             'admin_delete_completed_order' => (Gate::allows('admin_delete_completed_order')) ? true : false,
         ];
 
-        return view('orders.completed',compact(['acl']));
+        return view('orders.completed', compact(['acl']));
     }
     /**
      * Show the form for creating a new resource.
@@ -75,15 +75,14 @@ class OrderController extends Controller
      */
     public function create()
     {
-        if(session()->exists('order_id')) {
+        if (session()->exists('order_id')) {
 
             $acl = [
                 //'edit_product' => (Gate::allows('give-permissions')) ? true : false,
             ];
 
-            return view('orders.create_order', compact(['acl',session('order_id')]));
-
-        }else{
+            return view('orders.create_order', compact(['acl', session('order_id')]));
+        } else {
             try {
                 $order = Order::create([
                     'user_id' => Auth::id(),
@@ -102,12 +101,10 @@ class OrderController extends Controller
                 ];
 
                 return view('orders.create_order', compact(['acl']));
-
             } catch (Exception $e) {
-                abort(403);
+                abort(403, $e->getMessage());
             }
         }
-
     }
 
     /**
@@ -119,13 +116,12 @@ class OrderController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'order_id'=>'required',
-            'order_title'=>'required',
-            'order_description'=>'required',
+            'order_id' => 'required',
+            'order_title' => 'required',
+            'order_description' => 'required',
         ]);
 
-        if ($request->exists('draft'))
-        {
+        if ($request->exists('draft')) {
             try {
 
                 $order = Order::findOrFail($request->order_id);
@@ -141,11 +137,10 @@ class OrderController extends Controller
                 session()->forget('order_id');
 
                 return redirect()->route('orders.index');
-
             } catch (Exception $e) {
                 abort(403);
             }
-        }else{
+        } else {
             try {
 
                 $order = Order::findOrFail($request->order_id);
@@ -158,14 +153,13 @@ class OrderController extends Controller
 
                 $order->save();
                 //Event
-                $user=User::find($order->user_id);
+                $user = User::find($order->user_id);
                 event(new AgentSentOrder($order));
                 //
 
                 session()->forget('order_id');
 
                 return redirect()->route('orders.pending');
-
             } catch (Exception $e) {
                 abort(403);
             }
@@ -185,16 +179,14 @@ class OrderController extends Controller
 
 
             $order = Order::findOrFail($id);
-            if(auth()->user()->id==$order->user_id or auth()->user()->can('isAdmin')){
-                return view('orders.order_details',compact('order'));
+            if (auth()->user()->id == $order->user_id or auth()->user()->can('isAdmin')) {
+                return view('orders.order_details', compact('order'));
             }
 
-             abort(403);
-
+            abort(403);
         } catch (Exception $e) {
 
             abort(403);
-
         }
     }
 
@@ -211,7 +203,7 @@ class OrderController extends Controller
         $acl = [
             //'edit_product' => (Gate::allows('give-permissions')) ? true : false,
         ];
-        return view('orders.order_edit',compact('order','acl'));
+        return view('orders.order_edit', compact('order', 'acl'));
     }
 
     // edit view for pending orders
@@ -221,7 +213,7 @@ class OrderController extends Controller
         $acl = [
             //'edit_product' => (Gate::allows('give-permissions')) ? true : false,
         ];
-        return view('orders.order_edit_pending',compact('order','acl'));
+        return view('orders.order_edit_pending', compact('order', 'acl'));
     }
 
 
@@ -233,7 +225,7 @@ class OrderController extends Controller
         $acl = [
             //'edit_product' => (Gate::allows('give-permissions')) ? true : false,
         ];
-        return view('orders.order_edit_approved',compact('order','acl'));
+        return view('orders.order_edit_approved', compact('order', 'acl'));
     }
 
     // edit view for approved orders
@@ -243,7 +235,7 @@ class OrderController extends Controller
         $acl = [
             //'edit_product' => (Gate::allows('give-permissions')) ? true : false,
         ];
-        return view('orders.order_edit_completed',compact('order','acl'));
+        return view('orders.order_edit_completed', compact('order', 'acl'));
     }
 
     /**
@@ -256,14 +248,13 @@ class OrderController extends Controller
     public function update(Request $request)
     {
         $request->validate([
-            'order_id'=>'required',
-            'order_title'=>'required',
-            'order_description'=>'required',
-            'status_note'=>'required',
+            'order_id' => 'required',
+            'order_title' => 'required',
+            'order_description' => 'required',
+            'status_note' => 'required',
         ]);
 
-        if ($request->exists('pending'))
-        {
+        if ($request->exists('pending')) {
             try {
 
                 $order = Order::findOrFail($request->order_id);
@@ -283,11 +274,10 @@ class OrderController extends Controller
                 $order->save();
 
                 return redirect()->route('orders.pending');
-
             } catch (Exception $e) {
-                abort(403,$e->getMessage());
+                abort(403, $e->getMessage());
             }
-        }else{
+        } else {
             try {
 
                 $order = Order::findOrFail($request->order_id);
@@ -307,9 +297,8 @@ class OrderController extends Controller
                 $order->save();
                 event(new AdminApprovedOrder($order));
                 return redirect()->route('orders.approved');
-
             } catch (Exception $e) {
-                abort(403,$e->getMessage());
+                abort(403, $e->getMessage());
             }
         }
     }
@@ -319,14 +308,13 @@ class OrderController extends Controller
     public function updateApprovedOrder(Request $request)
     {
         $request->validate([
-            'order_id'=>'required',
-            'order_title'=>'required',
-            'order_description'=>'required',
-            'status_note'=>'required',
+            'order_id' => 'required',
+            'order_title' => 'required',
+            'order_description' => 'required',
+            'status_note' => 'required',
         ]);
 
-        if ($request->exists('approved'))
-        {
+        if ($request->exists('approved')) {
             try {
 
                 $order = Order::findOrFail($request->order_id);
@@ -349,11 +337,10 @@ class OrderController extends Controller
 
 
                 return redirect()->route('orders.approved');
-
             } catch (Exception $e) {
                 abort(403);
             }
-        }else{
+        } else {
             try {
 
                 $order = Order::findOrFail($request->order_id);
@@ -374,7 +361,6 @@ class OrderController extends Controller
                 event(new AdminCompletedOrder($order));
 
                 return redirect()->route('orders.completed');
-
             } catch (Exception $e) {
                 abort(403);
             }
@@ -384,10 +370,10 @@ class OrderController extends Controller
     public function updateCompletedOrder(Request $request)
     {
         $request->validate([
-            'order_id'=>'required',
-            'order_title'=>'required',
-            'order_description'=>'required',
-            'status_note'=>'required',
+            'order_id' => 'required',
+            'order_title' => 'required',
+            'order_description' => 'required',
+            'status_note' => 'required',
         ]);
 
         try {
@@ -410,11 +396,9 @@ class OrderController extends Controller
             event(new AdminUpdateOrder($order));
 
             return redirect()->route('orders.completed');
-
         } catch (Exception $e) {
             abort(403);
         }
-
     }
 
     /**
@@ -431,7 +415,5 @@ class OrderController extends Controller
     public function show_before_export($id)
     {
         return  99;
-
     }
-
 }

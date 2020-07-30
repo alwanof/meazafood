@@ -20,36 +20,37 @@ Vue.component('role-component', require('./components/RoleComponent.vue').defaul
 Vue.component('permission-component', require('./components/PermissionComponent.vue').default);
 Vue.component('config-component', require('./components/ConfigComponent.vue').default);
 Vue.component('settings-component', require('./components/SettingsComponent.vue').default);
-Vue.component('product-component',require('./components/ProductComponent.vue').default);
-Vue.component('order-component',require('./components/OrderComponent.vue').default);
-Vue.component('order-pending-component',require('./components/PendingOrdersComponent.vue').default);
-Vue.component('order-approved-component',require('./components/ApprovedOrdersComponent.vue').default);
-Vue.component('order-completed-component',require('./components/CompletedOrdersComponent.vue').default);
-Vue.component('bill-component',require('./components/BillComponent').default);
-Vue.component('order-create-component',require('./components/CreateOrderComponent.vue').default);
-Vue.component('order-edit-component',require('./components/EditOrderComponent.vue').default);
-Vue.component('order-edit-pending-component',require('./components/EditPendingOrderComponent.vue').default);
-Vue.component('order-edit-approved-component',require('./components/EditApprovedOrderComponent.vue').default);
-Vue.component('order-edit-completed-component',require('./components/EditCompletedOrderComponent.vue').default);
-function coolNumber(num){
-    if(num <1000){
+Vue.component('product-component', require('./components/ProductComponent.vue').default);
+Vue.component('order-component', require('./components/OrderComponent.vue').default);
+Vue.component('order-pending-component', require('./components/PendingOrdersComponent.vue').default);
+Vue.component('order-approved-component', require('./components/ApprovedOrdersComponent.vue').default);
+Vue.component('order-completed-component', require('./components/CompletedOrdersComponent.vue').default);
+Vue.component('bill-component', require('./components/BillComponent').default);
+Vue.component('order-create-component', require('./components/CreateOrderComponent.vue').default);
+Vue.component('order-edit-component', require('./components/EditOrderComponent.vue').default);
+Vue.component('order-edit-pending-component', require('./components/EditPendingOrderComponent.vue').default);
+Vue.component('order-edit-approved-component', require('./components/EditApprovedOrderComponent.vue').default);
+Vue.component('order-edit-completed-component', require('./components/EditCompletedOrderComponent.vue').default);
+
+function coolNumber(num) {
+    if (num < 1000) {
         return $num;
     }
 
-    if(num <1000000){
-        return (num/1000)+'K';
+    if (num < 1000000) {
+        return (num / 1000) + 'K';
     }
-    if($num >=1000000){
-        return (num/1000000)+'M';
+    if ($num >= 1000000) {
+        return (num / 1000000) + 'M';
     }
 }
 const CONFIG = {
-    API_URL: 'https://'+window.location.hostname+'/public/api/',
+    API_URL: 'https://' + window.location.hostname + '/public/api/',
     PATH: '/public',
-    //API_URL: 'http://'+window.location.hostname+'/meazafood/public/api/',
+    //API_URL: 'http://' + window.location.hostname + '/meazafood/public/api/',
     //PATH: '/meazafood/public',
     LANG: translations,
-    coolNumber:coolNumber
+    coolNumber: coolNumber
 
 }
 

@@ -45656,7 +45656,7 @@ function coolNumber(num) {
 var CONFIG = {
   API_URL: 'https://' + window.location.hostname + '/public/api/',
   PATH: '/public',
-  //API_URL: 'http://'+window.location.hostname+'/meazafood/public/api/',
+  //API_URL: 'http://' + window.location.hostname + '/meazafood/public/api/',
   //PATH: '/meazafood/public',
   LANG: _lang_vue_translations_json__WEBPACK_IMPORTED_MODULE_0__,
   coolNumber: coolNumber
