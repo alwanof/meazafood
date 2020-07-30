@@ -102,7 +102,8 @@ class OrderController extends Controller
 
                 return view('orders.create_order', compact(['acl']));
             } catch (Exception $e) {
-                abort(403, $e->getMessage());
+                echo $e->getMessage();
+                //abort(403, $e->getMessage());
             }
         }
     }
